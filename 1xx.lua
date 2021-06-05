@@ -496,7 +496,7 @@ end
 			}, 0)
 			wait(0)
 			
-			utility:Tween(topbar, {Size = UDim2.new(1, 0, 0, 38)}, 0.2)
+			utility:Tween(topbar, {Size = UDim2.new(1, 0, 0, 38)}, 0)
 			wait(0)
 			
 			container.ClipsDescendants = false
@@ -505,7 +505,7 @@ end
 			self.position = container.Position
 			container.ClipsDescendants = true
 			
-			utility:Tween(topbar, {Size = UDim2.new(1, 0, 1, 0)}, 0.2)
+			utility:Tween(topbar, {Size = UDim2.new(1, 0, 1, 0)}, 0)
 			wait(0)
 			
 			utility:Tween(container, {
@@ -621,7 +621,8 @@ end
 		wait()
 		
 		notification.ClipsDescendants = false
-		utility:Tween(notification.Flash, {
+		utility:
+		(notification.Flash, {
 			Size = UDim2.new(0, 0, 0, 60),
 			Position = UDim2.new(1, 0, 0, 0)
 		}, 0)
