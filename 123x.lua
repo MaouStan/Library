@@ -494,10 +494,10 @@ end
 				Size = UDim2.new(0, 511, 0, 428),
 				Position = self.position
 			}, 0)
-			wait(0)
+			wait()
 			
 			utility:Tween(topbar, {Size = UDim2.new(1, 0, 0, 38)}, 0)
-			wait(0)
+			wait()
 			
 			container.ClipsDescendants = false
 			self.position = nil
@@ -506,13 +506,13 @@ end
 			container.ClipsDescendants = true
 			
 			utility:Tween(topbar, {Size = UDim2.new(1, 0, 1, 0)}, 0)
-			wait(0)
+			wait()
 			
 			utility:Tween(container, {
 				Size = UDim2.new(0, 511, 0, 0),
 				Position = self.position + UDim2.new(0, 0, 0, 428)
 			}, 0)
-			wait(0)
+			wait()
 		end
 		
 		self.toggling = false
@@ -724,10 +724,10 @@ end
 			
 			debounce = true
 			text.TextSize = 0
-			utility:Tween(button.Title, {TextSize = 14}, 0.2)
+			utility:Tween(button.Title, {TextSize = 14}, 0)
 			
 			wait(0.2)
-			utility:Tween(button.Title, {TextSize = 12}, 0.2)
+			utility:Tween(button.Title, {TextSize = 12}, 0)
 			
 			if callback then
 				callback(function(...)
@@ -1437,7 +1437,7 @@ end
 				end
 				
 				self:updateColorPicker(colorpicker, nil, {hue, sat, brightness}) -- roblox is literally retarded
-				utility:Tween(canvas.Cursor, {Position = UDim2.new(sat, 0, 1 - brightness, 0)}, 0.1) -- overwrite
+				utility:Tween(canvas.Cursor, {Position = UDim2.new(sat, 0, 1 - brightness, 0)}, 0) -- overwrite
 				
 				callback(color3)
 				utility:Wait()
@@ -1513,7 +1513,7 @@ end
 				tab.Size = UDim2.new(0, 0, 0, 0)
 				
 				tab.Position = UDim2.new(0, x1 + x2 + px, 0, py)
-				utility:Tween(tab, {Size = UDim2.new(0, 162, 0, 169)}, 0.2)
+				utility:Tween(tab, {Size = UDim2.new(0, 162, 0, 169)}, 0)
 				
 				-- update size and position
 				wait(0.2)
@@ -2001,7 +2001,7 @@ end
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -9),
 			Position = position[value] + UDim2.new(0, 0, 0, 0)
-		}, 0.2)
+		}, 0)
 		
 		wait(0.1)
 		utility:Tween(frame, {
