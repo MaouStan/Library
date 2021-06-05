@@ -621,8 +621,7 @@ end
 		wait()
 		
 		notification.ClipsDescendants = false
-		utility:
-		(notification.Flash, {
+		utility:Tween(notification.Flash, {
 			Size = UDim2.new(0, 0, 0, 60),
 			Position = UDim2.new(1, 0, 0, 0)
 		}, 0)
