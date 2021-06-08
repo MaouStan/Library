@@ -2147,7 +2147,7 @@ function MaouLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(134,236,228)}
+						{BackgroundColor3 = Color3.fromRGB(36,154,69)}
 					):Play()
 				end)
 				
@@ -2165,7 +2165,7 @@ function MaouLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(145, 255, 255)}
+						{BackgroundColor3 = Color3.fromRGB(25, 140, 37)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
