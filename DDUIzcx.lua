@@ -1669,7 +1669,7 @@ function MaouLib:Window(text)
 		local ServerWhiteFrame = Instance.new("Frame")
 		local ServerWhiteFrameCorner = Instance.new("UICorner")
 
-		Server.Name = text .. "Server"
+		Server.Name =  "Server"..text
 		Server.Parent = ServersHold
 		Server.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		Server.Position = UDim2.new(0.125, 0, 0, 0)
@@ -1681,10 +1681,10 @@ function MaouLib:Window(text)
 		Server.TextSize = 18.000
 
 		ServerBtnCorner.CornerRadius = UDim.new(1, 0)
-		ServerBtnCorner.Name = LibName.."ServerCorner"..LibName
+		ServerBtnCorner.Name = "ServerCorner"..text
 		ServerBtnCorner.Parent = Server
 
-		ServerIco.Name = LibName.."ServerIco"..LibName
+		ServerIco.Name = "ServerIco"..text
 		ServerIco.Parent = Server
 		ServerIco.AnchorPoint = Vector2.new(0.5, 0.5)
 		ServerIco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1693,7 +1693,7 @@ function MaouLib:Window(text)
 		ServerIco.Size = UDim2.new(0, 26, 0, 26)
 		ServerIco.Image = ""
 
-		ServerWhiteFrame.Name = LibName.."ServerWhiteFrame"..LibName
+		ServerWhiteFrame.Name = "ServerWhiteFrame"..text
 		ServerWhiteFrame.Parent = Server
 		ServerWhiteFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 		ServerWhiteFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
