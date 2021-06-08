@@ -2202,7 +2202,7 @@ function MaouLib:Window(text)
 				ToggleTitle.Size = UDim2.new(0, 200, 0, 30)
 				ToggleTitle.Font = Enum.Font.Gotham
 				ToggleTitle.Text = text
-				ToggleTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				ToggleTitle.TextColor3 = Color3.fromRGB(62, 250, 97)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2332,7 +2332,7 @@ function MaouLib:Window(text)
 				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
 				SliderTitle.Font = Enum.Font.Gotham
 				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				SliderTitle.TextColor3 = Color3.fromRGB(62, 250, 225)
 				SliderTitle.TextSize = 14.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2536,7 +2536,7 @@ end
 				DropdownTitle.Size = UDim2.new(0, 200, 0, 29)
 				DropdownTitle.Font = Enum.Font.Gotham
 				DropdownTitle.Text = text
-				DropdownTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				DropdownTitle.TextColor3 = Color3.fromRGB(62, 84, 250)
 				DropdownTitle.TextSize = 14.000
 				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2875,7 +2875,7 @@ end
 				ColorpickerTitle.Size = UDim2.new(0, 200, 0, 29)
 				ColorpickerTitle.Font = Enum.Font.Gotham
 				ColorpickerTitle.Text = "Colorpicker"
-				ColorpickerTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				ColorpickerTitle.TextColor3 = Color3.fromRGB(250, 62, 219)
 				ColorpickerTitle.TextSize = 14.000
 				ColorpickerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -3090,7 +3090,7 @@ end
 				TextboxTitle.Size = UDim2.new(0, 200, 0, 29)
 				TextboxTitle.Font = Enum.Font.Gotham
 				TextboxTitle.Text = text
-				TextboxTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				TextboxTitle.TextColor3 = Color3.fromRGB(81, 250, 62)
 				TextboxTitle.TextSize = 14.000
 				TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -3181,7 +3181,7 @@ end
 				LabelTitle.Size = UDim2.new(0, 200, 0, 30)
 				LabelTitle.Font = Enum.Font.Gotham
 				LabelTitle.Text = text
-				LabelTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				LabelTitle.TextColor3 = Color3.fromRGB(250, 184, 62)
 				LabelTitle.TextSize = 14.000
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 				
@@ -3214,7 +3214,7 @@ end
 				KeybindTitle.Size = UDim2.new(0, 200, 0, 30)
 				KeybindTitle.Font = Enum.Font.Gotham
 				KeybindTitle.Text = text
-				KeybindTitle.TextColor3 = Color3.fromRGB(141, 50, 168)
+				KeybindTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				KeybindTitle.TextSize = 14.000
 				KeybindTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -3226,7 +3226,7 @@ end
 				KeybindText.Size = UDim2.new(0, 85, 0, 30)
 				KeybindText.Font = Enum.Font.Gotham
 				KeybindText.Text = presetbind.Name
-				KeybindText.TextColor3 = Color3.fromRGB(141, 50, 168)
+				KeybindText.TextColor3 = Color3.fromRGB(255, 255, 61)
 				KeybindText.TextSize = 14.000
 				KeybindText.TextXAlignment = Enum.TextXAlignment.Right
 				
