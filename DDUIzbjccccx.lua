@@ -1938,6 +1938,27 @@ function MaouLib:Window(text)
 				currentservertoggled = Server.Name
 				for i, v in next, ServersHolder:GetChildren() do
 					if v.Name == LibName.."ServerFrame"..LibName then
+						spawn(function()
+								if currentservertoggled ~= Server.Name then
+					TweenService:Create(
+						Server,
+						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}
+					):Play()
+					TweenService:Create(
+						ServerBtnCorner,
+						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{CornerRadius = UDim.new(1, 0)}
+					):Play()
+					ServerWhiteFrame:TweenSize(
+						UDim2.new(0, 11, 0, 10),
+						Enum.EasingDirection.Out,
+						Enum.EasingStyle.Quart,
+						0,
+						true
+					)
+				end
+								end)
 						v.Visible = false
 					end
 					ServerFrame.Visible = true
