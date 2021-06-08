@@ -1,4 +1,4 @@
-local DiscordLib = {}
+local MaouLib = {}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -11,7 +11,7 @@ local tag
 local userinfo = {}
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 pcall(function()
-	userinfo = HttpService:JSONDecode(readfile("MaouHubdiscordlibinfo.txt"));
+	userinfo = HttpService:JSONDecode(readfile("MaouHubMaoulibinfo.txt"));
 end)
 
 pfp = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
@@ -22,7 +22,7 @@ local function SaveInfo()
 	userinfo["pfp"] = pfp
 	userinfo["user"] = user
 	userinfo["tag"] = tag
-	writefile("MaouHubdiscordlibinfo.txt", HttpService:JSONEncode(userinfo));
+	writefile("MaouHubMaoulibinfo.txt", HttpService:JSONEncode(userinfo));
 end
 
 local function MakeDraggable(topbarobject, object)
@@ -81,10 +81,10 @@ local function MakeDraggable(topbarobject, object)
 	)
 end
 
-local ui = Instance.new("ScreenGui")
-ui.Name = LibName
-ui.Parent = game.CoreGui
-ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local maou = Instance.new("ScreenGui")
+maou.Name = LibName
+maou.Parent = game.CoreGui
+maou.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function uiLib:Window(text)
 	local currentservertoggled = ""
@@ -397,7 +397,7 @@ function uiLib:Window(text)
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
 	local SettingsTitle = Instance.new("TextLabel")
-	local DiscordInfo = Instance.new("TextLabel")
+	local MaouInfo = Instance.new("TextLabel")
 	local CurrentSettingOpen = Instance.new("TextLabel")
 
 	SettingsFrame.Name = "SettingsFrame"
@@ -1111,19 +1111,19 @@ function uiLib:Window(text)
 	SettingsTitle.TextSize = 11.000
 	SettingsTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-	DiscordInfo.Name = "DiscordInfo"
-	DiscordInfo.Parent = LeftFrame
-	DiscordInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	DiscordInfo.BackgroundTransparency = 1.000
-	DiscordInfo.Position = UDim2.new(0.304721028, 0, 0.821333349, 0)
-	DiscordInfo.Size = UDim2.new(0, 133, 0, 44)
-	DiscordInfo.Font = Enum.Font.Gotham
-	DiscordInfo.Text = "Stable 1.0.0 (00001)  Host 0.0.0.1                Roblox Lua Engine    "
-	DiscordInfo.TextColor3 = Color3.fromRGB(101, 108, 116)
-	DiscordInfo.TextSize = 13.000
-	DiscordInfo.TextWrapped = true
-	DiscordInfo.TextXAlignment = Enum.TextXAlignment.Left
-	DiscordInfo.TextYAlignment = Enum.TextYAlignment.Top
+	MaouInfo.Name = "MaouInfo"
+	MaouInfo.Parent = LeftFrame
+	MaouInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MaouInfo.BackgroundTransparency = 1.000
+	MaouInfo.Position = UDim2.new(0.304721028, 0, 0.821333349, 0)
+	MaouInfo.Size = UDim2.new(0, 133, 0, 44)
+	MaouInfo.Font = Enum.Font.Gotham
+	MaouInfo.Text = "Stable 1.0.0 (00001)  Host 0.0.0.1                Roblox Lua Engine    "
+	MaouInfo.TextColor3 = Color3.fromRGB(101, 108, 116)
+	MaouInfo.TextSize = 13.000
+	MaouInfo.TextWrapped = true
+	MaouInfo.TextXAlignment = Enum.TextXAlignment.Left
+	MaouInfo.TextYAlignment = Enum.TextYAlignment.Top
 
 	CurrentSettingOpen.Name = "CurrentSettingOpen"
 	CurrentSettingOpen.Parent = LeftFrame
@@ -1515,7 +1515,7 @@ function uiLib:Window(text)
 		
 	end)
 	
-	function DiscordLib:Notification(titletext, desctext, btntext)
+	function MaouLib:Notification(titletext, desctext, btntext)
 		local NotificationHolderMain = Instance.new("TextButton")
 		local Notification = Instance.new("Frame")
 		local NotificationCorner = Instance.new("UICorner")
@@ -3244,4 +3244,4 @@ function uiLib:Window(text)
 	end
 	return ServerHold
 end
-return DiscordLib
+return MaouLib
