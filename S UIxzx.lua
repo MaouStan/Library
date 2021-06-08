@@ -1333,7 +1333,7 @@ function library:AddWindow(title, options)
 						return slider_data, slider
 					end
 
-					function tab_data:AddKeybind(keybind_name, callback, keybind_options)
+					function tab_data:AddKeybind(keybind_name,keybind_options, callback)
 						local keybind_data = {}
 
 						keybind_name = tostring(keybind_name or "New Keybind")
