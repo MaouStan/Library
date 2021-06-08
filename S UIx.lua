@@ -1398,14 +1398,14 @@ function library:AddWindow(title, options)
 						return keybind_data, keybind
 					end
 						
-function tab_data:ToggleUI()
+function library:ToggleUI()
 	    if game.CoreGui[LibName].Enabled then
         	game.CoreGui[LibName].Enabled = false
     	    else
         	game.CoreGui[LibName].Enabled = true
     	  end
 end
-function tab_data:DestroyUI()
+function library:DestroyUI()
 	   if pcall(function() return game.CoreGui[LibName] end) then
         	game.CoreGui[LibName]:remove()
     	  end
