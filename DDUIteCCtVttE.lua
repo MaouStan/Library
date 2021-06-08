@@ -3256,4 +3256,4 @@ end
 	end
 	return ServerHold
 end
-return MaouLib
+return LibName,MaouLib
