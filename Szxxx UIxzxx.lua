@@ -1453,7 +1453,7 @@ end
 						end)
 						function dropdown_data:Refresh(n)
 							for i,v in pairs(objects:GetChildren()) do
-    if v.Name == "DropdownButton" then
+    if v.Name == "DropdownButton" and v.Text ~= n then
 v:remove()
 end
 end
