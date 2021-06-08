@@ -112,7 +112,7 @@ function MaouLib:Window(text)
 	local ServersHoldPadding = Instance.new("UIPadding")
 	local TopFrameHolder = Instance.new("Frame")
 
-	MainFrame.Name = "MainFrame"
+	MainFrame.Name = LibName.."MainFrame"..LibName
 	MainFrame.Parent = Discord
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
@@ -121,7 +121,7 @@ function MaouLib:Window(text)
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 681, 0, 396)
 
-	TopFrame.Name = "TopFrame"
+	TopFrame.Name = LibName.."TopFrame"..LibName
 	TopFrame.Parent = MainFrame
 	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	TopFrame.BackgroundTransparency = 1.000
@@ -129,7 +129,7 @@ function MaouLib:Window(text)
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrame.Size = UDim2.new(0, 681, 0, 22)
 	
-	TopFrameHolder.Name = "TopFrameHolder"
+	TopFrameHolder.Name = LibName.."TopFrameHolder"..LibName
 	TopFrameHolder.Parent = TopFrame
 	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	TopFrameHolder.BackgroundTransparency = 1.000
@@ -137,7 +137,7 @@ function MaouLib:Window(text)
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrameHolder.Size = UDim2.new(0, 681, 0, 22)
 
-	Title.Name = "Title"
+	Title.Name = LibName.."Title"..LibName
 	Title.Parent = TopFrame
 	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Title.BackgroundTransparency = 1.000
@@ -149,7 +149,7 @@ function MaouLib:Window(text)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
-	CloseBtn.Name = "CloseBtn"
+	CloseBtn.Name = LibName.."CloseBtn"..LibName
 	CloseBtn.Parent = TopFrame
 	CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	CloseBtn.BackgroundTransparency = 0
@@ -162,7 +162,7 @@ function MaouLib:Window(text)
 	CloseBtn.BorderSizePixel = 0
 	CloseBtn.AutoButtonColor = false
 
-	CloseIcon.Name = "CloseIcon"
+	CloseIcon.Name = LibName.."CloseIcon"..LibName
 	CloseIcon.Parent = CloseBtn
 	CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	CloseIcon.BackgroundTransparency = 1.000
@@ -171,7 +171,7 @@ function MaouLib:Window(text)
 	CloseIcon.Image = "http://www.roblox.com/asset/?id=6035047409"
 	CloseIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
-	MinimizeBtn.Name = "MinimizeButton"
+	MinimizeBtn.Name = LibName.."MinimizeButton"..LibName
 	MinimizeBtn.Parent = TopFrame
 	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	MinimizeBtn.BackgroundTransparency = 0
@@ -184,7 +184,7 @@ function MaouLib:Window(text)
 	MinimizeBtn.BorderSizePixel = 0
 	MinimizeBtn.AutoButtonColor = false
 
-	MinimizeIcon.Name = "MinimizeLabel"
+	MinimizeIcon.Name = LibName.."MinimizeLabel"..LibName
 	MinimizeIcon.Parent = MinimizeBtn
 	MinimizeIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MinimizeIcon.BackgroundTransparency = 1.000
@@ -193,17 +193,17 @@ function MaouLib:Window(text)
 	MinimizeIcon.Image = "http://www.roblox.com/asset/?id=6035067836"
 	MinimizeIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
-	ServersHolder.Name = "ServersHolder"
+	ServersHolder.Name = LibName.."ServersHolder"..LibName
 	ServersHolder.Parent = TopFrameHolder
 
-	Userpad.Name = "Userpad"
+	Userpad.Name = LibName.."Userpad"..LibName
 	Userpad.Parent = TopFrameHolder
 	Userpad.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
 	Userpad.BorderSizePixel = 0
 	Userpad.Position = UDim2.new(0.106243297, 0, 15.9807148, 0)
 	Userpad.Size = UDim2.new(0, 179, 0, 43)
 
-	UserIcon.Name = "UserIcon"
+	UserIcon.Name = LibName.."UserIcon"..LibName
 	UserIcon.Parent = Userpad
 	UserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
 	UserIcon.BorderSizePixel = 0
@@ -211,17 +211,17 @@ function MaouLib:Window(text)
 	UserIcon.Size = UDim2.new(0, 32, 0, 32)
 
 	UserIconCorner.CornerRadius = UDim.new(1, 8)
-	UserIconCorner.Name = "UserIconCorner"
+	UserIconCorner.Name = LibName.."UserIconCorner"..LibName
 	UserIconCorner.Parent = UserIcon
 
-	UserImage.Name = "UserImage"
+	UserImage.Name = LibName.."UserImage"..LibName
 	UserImage.Parent = UserIcon
 	UserImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserImage.BackgroundTransparency = 1.000
 	UserImage.Size = UDim2.new(0, 32, 0, 32)
 	UserImage.Image = pfp 
 	
-	UserCircleImage.Name = "UserImage"
+	UserCircleImage.Name = LibName.."UserImage"..LibName
 	UserCircleImage.Parent = UserImage
 	UserCircleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserCircleImage.BackgroundTransparency = 1.000
@@ -229,7 +229,7 @@ function MaouLib:Window(text)
 	UserCircleImage.Image = "rbxassetid://4031889928"
 	UserCircleImage.ImageColor3 = Color3.fromRGB(41, 43, 47)
 	
-	UserName.Name = "UserName"
+	UserName.Name = LibName.."UserName"..LibName
 	UserName.Parent = Userpad
 	UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserName.BackgroundTransparency = 1.000
@@ -242,7 +242,7 @@ function MaouLib:Window(text)
 	UserName.TextXAlignment = Enum.TextXAlignment.Left
 	UserName.ClipsDescendants = true
 
-	UserTag.Name = "UserTag"
+	UserTag.Name = LibName.."UserTag"..LibName
 	UserTag.Parent = Userpad
 	UserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserTag.BackgroundTransparency = 1.000
@@ -258,14 +258,14 @@ function MaouLib:Window(text)
 	UserName.Text = user
 	UserTag.Text = "#" .. tag
 
-	ServersHoldFrame.Name = "ServersHoldFrame"
+	ServersHoldFrame.Name = LibName.."ServersHoldFrame"..LibName
 	ServersHoldFrame.Parent = MainFrame
 	ServersHoldFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ServersHoldFrame.BackgroundTransparency = 1.000
 	ServersHoldFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 	ServersHoldFrame.Size = UDim2.new(0, 71, 0, 396)
 
-	ServersHold.Name = "ServersHold"
+	ServersHold.Name = LibName.."ServersHold"..LibName
 	ServersHold.Parent = ServersHoldFrame
 	ServersHold.Active = true
 	ServersHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -277,12 +277,12 @@ function MaouLib:Window(text)
 	ServersHold.ScrollBarImageTransparency = 1
 	ServersHold.CanvasSize = UDim2.new(0, 0, 0, 0)
 
-	ServersHoldLayout.Name = "ServersHoldLayout"
+	ServersHoldLayout.Name = LibName.."ServersHoldLayout"..LibName
 	ServersHoldLayout.Parent = ServersHold
 	ServersHoldLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	ServersHoldLayout.Padding = UDim.new(0, 7)
 
-	ServersHoldPadding.Name = "ServersHoldPadding"
+	ServersHoldPadding.Name = LibName.."ServersHoldPadding"..LibName
 	ServersHoldPadding.Parent = ServersHold
 
 	CloseBtn.MouseButton1Click:Connect(
@@ -341,7 +341,7 @@ function MaouLib:Window(text)
 	local SettingsOpenBtn = Instance.new("TextButton")
 	local SettingsOpenBtnIco = Instance.new("ImageLabel")
 	
-	SettingsOpenBtn.Name = "SettingsOpenBtn"
+	SettingsOpenBtn.Name = LibName.."SettingsOpenBtn"..LibName
 	SettingsOpenBtn.Parent = Userpad
 	SettingsOpenBtn.BackgroundColor3 = Color3.fromRGB(53, 56, 62)
 	SettingsOpenBtn.BackgroundTransparency = 1.000
@@ -352,7 +352,7 @@ function MaouLib:Window(text)
 	SettingsOpenBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 	SettingsOpenBtn.TextSize = 14.000
 
-	SettingsOpenBtnIco.Name = "SettingsOpenBtnIco"
+	SettingsOpenBtnIco.Name = LibName.."SettingsOpenBtnIco"..LibName
 	SettingsOpenBtnIco.Parent = SettingsOpenBtn
 	SettingsOpenBtnIco.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
 	SettingsOpenBtnIco.BackgroundTransparency = 1.000
@@ -400,21 +400,21 @@ function MaouLib:Window(text)
 	local DiscordInfo = Instance.new("TextLabel")
 	local CurrentSettingOpen = Instance.new("TextLabel")
 
-	SettingsFrame.Name = "SettingsFrame"
+	SettingsFrame.Name = LibName.."SettingsFrame"..LibName
 	SettingsFrame.Parent = MainFrame
 	SettingsFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 	SettingsFrame.BackgroundTransparency = 1.000
 	SettingsFrame.Size = UDim2.new(0, 681, 0, 396)
 	SettingsFrame.Visible = false
 
-	Settings.Name = "Settings"
+	Settings.Name = LibName.."Settings"..LibName
 	Settings.Parent = SettingsFrame
 	Settings.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 	Settings.BorderSizePixel = 0
 	Settings.Position = UDim2.new(0, 0, 0.0530303046, 0)
 	Settings.Size = UDim2.new(0, 681, 0, 375)
 
-	SettingsHolder.Name = "SettingsHolder"
+	SettingsHolder.Name = LibName.."SettingsHolder"..LibName
 	SettingsHolder.Parent = Settings
 	SettingsHolder.AnchorPoint = Vector2.new(0.5, 0.5)
 	SettingsHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -423,7 +423,7 @@ function MaouLib:Window(text)
 	SettingsHolder.Position = UDim2.new(0.49926579, 0, 0.498666674, 0)
 	SettingsHolder.Size = UDim2.new(0, 0, 0, 0)
 
-	CloseSettingsBtn.Name = "CloseSettingsBtn"
+	CloseSettingsBtn.Name = LibName.."CloseSettingsBtn"..LibName
 	CloseSettingsBtn.Parent = SettingsHolder
 	CloseSettingsBtn.AnchorPoint = Vector2.new(0.5, 0.5)
 	CloseSettingsBtn.BackgroundColor3 = Color3.fromRGB(113, 117, 123)
@@ -437,20 +437,20 @@ function MaouLib:Window(text)
 	CloseSettingsBtn.TextSize = 14.000
 
 	CloseSettingsBtnCorner.CornerRadius = UDim.new(1, 0)
-	CloseSettingsBtnCorner.Name = "CloseSettingsBtnCorner"
+	CloseSettingsBtnCorner.Name = LibName.."CloseSettingsBtnCorner"..LibName
 	CloseSettingsBtnCorner.Parent = CloseSettingsBtn
 
-	CloseSettingsBtnCircle.Name = "CloseSettingsBtnCircle"
+	CloseSettingsBtnCircle.Name = LibName.."CloseSettingsBtnCircle"..LibName
 	CloseSettingsBtnCircle.Parent = CloseSettingsBtn
 	CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 	CloseSettingsBtnCircle.Position = UDim2.new(0.0879999995, 0, 0.118000001, 0)
 	CloseSettingsBtnCircle.Size = UDim2.new(0, 24, 0, 24)
 
 	CloseSettingsBtnCircleCorner.CornerRadius = UDim.new(1, 0)
-	CloseSettingsBtnCircleCorner.Name = "CloseSettingsBtnCircleCorner"
+	CloseSettingsBtnCircleCorner.Name = LibName.."CloseSettingsBtnCircleCorner"..LibName
 	CloseSettingsBtnCircleCorner.Parent = CloseSettingsBtnCircle
 
-	CloseSettingsBtnIcon.Name = "CloseSettingsBtnIcon"
+	CloseSettingsBtnIcon.Name = LibName.."CloseSettingsBtnIcon"..LibName
 	CloseSettingsBtnIcon.Parent = CloseSettingsBtnCircle
 	CloseSettingsBtnIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	CloseSettingsBtnIcon.BackgroundTransparency = 1.000
@@ -525,22 +525,22 @@ function MaouLib:Window(text)
 	TextLabel.TextColor3 = Color3.fromRGB(113, 117, 123)
 	TextLabel.TextSize = 11.000
 
-	UserPanel.Name = "UserPanel"
+	UserPanel.Name = LibName.."UserPanel"..LibName
 	UserPanel.Parent = SettingsHolder
 	UserPanel.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 	UserPanel.Position = UDim2.new(0.365638763, 0, 0.130666673, 0)
 	UserPanel.Size = UDim2.new(0, 362, 0, 164)
 
-	UserSettingsPad.Name = "UserSettingsPad"
+	UserSettingsPad.Name = LibName.."UserSettingsPad"..LibName
 	UserSettingsPad.Parent = UserPanel
 	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 	UserSettingsPad.Position = UDim2.new(0.0331491716, 0, 0.568140388, 0)
 	UserSettingsPad.Size = UDim2.new(0, 337, 0, 56)
 
-	UserSettingsPadCorner.Name = "UserSettingsPadCorner"
+	UserSettingsPadCorner.Name = LibName.."UserSettingsPadCorner"..LibName
 	UserSettingsPadCorner.Parent = UserSettingsPad
 
-	UsernameText.Name = "UsernameText"
+	UsernameText.Name = LibName.."UsernameText"..LibName
 	UsernameText.Parent = UserSettingsPad
 	UsernameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UsernameText.BackgroundTransparency = 1.000
@@ -552,14 +552,14 @@ function MaouLib:Window(text)
 	UsernameText.TextSize = 11.000
 	UsernameText.TextXAlignment = Enum.TextXAlignment.Left
 
-	UserSettingsPadUserTag.Name = "UserSettingsPadUserTag"
+	UserSettingsPadUserTag.Name = LibName.."UserSettingsPadUserTag"..LibName
 	UserSettingsPadUserTag.Parent = UserSettingsPad
 	UserSettingsPadUserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserSettingsPadUserTag.BackgroundTransparency = 1.000
 	UserSettingsPadUserTag.Position = UDim2.new(0.0419999994, 0, 0.493999988, 0)
 	UserSettingsPadUserTag.Size = UDim2.new(0, 65, 0, 19)
 
-	UserSettingsPadUser.Name = "UserSettingsPadUser"
+	UserSettingsPadUser.Name = LibName.."UserSettingsPadUser"..LibName
 	UserSettingsPadUser.Parent = UserSettingsPadUserTag
 	UserSettingsPadUser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserSettingsPadUser.BackgroundTransparency = 1.000
@@ -570,12 +570,12 @@ function MaouLib:Window(text)
 	UserSettingsPadUser.Text = user
 	UserSettingsPadUser.Size = UDim2.new(0, UserSettingsPadUser.TextBounds.X + 2, 0, 19)
 
-	UserSettingsPadUserTagLayout.Name = "UserSettingsPadUserTagLayout"
+	UserSettingsPadUserTagLayout.Name = LibName.."UserSettingsPadUserTagLayout"..LibName
 	UserSettingsPadUserTagLayout.Parent = UserSettingsPadUserTag
 	UserSettingsPadUserTagLayout.FillDirection = Enum.FillDirection.Horizontal
 	UserSettingsPadUserTagLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
-	UserSettingsPadTag.Name = "UserSettingsPadTag"
+	UserSettingsPadTag.Name = LibName.."UserSettingsPadTag"..LibName
 	UserSettingsPadTag.Parent = UserSettingsPadUserTag
 	UserSettingsPadTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserSettingsPadTag.BackgroundTransparency = 1.000
@@ -587,7 +587,7 @@ function MaouLib:Window(text)
 	UserSettingsPadTag.TextSize = 13.000
 	UserSettingsPadTag.TextXAlignment = Enum.TextXAlignment.Left
 
-	EditBtn.Name = "EditBtn"
+	EditBtn.Name = LibName.."EditBtn"..LibName
 	EditBtn.Parent = UserSettingsPad
 	EditBtn.BackgroundColor3 = Color3.fromRGB(116, 127, 141)
 	EditBtn.Position = UDim2.new(0.797671914, 0, 0.232142866, 0)
@@ -615,10 +615,10 @@ function MaouLib:Window(text)
 	end)
 
 	EditBtnCorner.CornerRadius = UDim.new(0, 3)
-	EditBtnCorner.Name = "EditBtnCorner"
+	EditBtnCorner.Name = LibName.."EditBtnCorner"..LibName
 	EditBtnCorner.Parent = EditBtn
 
-	UserPanelUserIcon.Name = "UserPanelUserIcon"
+	UserPanelUserIcon.Name = LibName.."UserPanelUserIcon"..LibName
 	UserPanelUserIcon.Parent = UserPanel
 	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
 	UserPanelUserIcon.BorderSizePixel = 0
@@ -627,14 +627,14 @@ function MaouLib:Window(text)
 	UserPanelUserIcon.AutoButtonColor = false
 	UserPanelUserIcon.Text = ""
 
-	UserPanelUserImage.Name = "UserPanelUserImage"
+	UserPanelUserImage.Name = LibName.."UserPanelUserImage"..LibName
 	UserPanelUserImage.Parent = UserPanelUserIcon
 	UserPanelUserImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserPanelUserImage.BackgroundTransparency = 1.000
 	UserPanelUserImage.Size = UDim2.new(0, 71, 0, 71)
 	UserPanelUserImage.Image = pfp
 
-	UserPanelUserCircle.Name = "UserPanelUserCircle"
+	UserPanelUserCircle.Name = LibName.."UserPanelUserCircle"..LibName
 	UserPanelUserCircle.Parent = UserPanelUserImage
 	UserPanelUserCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserPanelUserCircle.BackgroundTransparency = 1.000
@@ -642,7 +642,7 @@ function MaouLib:Window(text)
 	UserPanelUserCircle.Image = "rbxassetid://4031889928"
 	UserPanelUserCircle.ImageColor3 = Color3.fromRGB(47, 49, 54)
 
-	BlackFrame.Name = "BlackFrame"
+	BlackFrame.Name = LibName.."BlackFrame"..LibName
 	BlackFrame.Parent = UserPanelUserIcon
 	BlackFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	BlackFrame.BackgroundTransparency = 0.400
@@ -651,10 +651,10 @@ function MaouLib:Window(text)
 	BlackFrame.Visible = false
 
 	BlackFrameCorner.CornerRadius = UDim.new(1, 8)
-	BlackFrameCorner.Name = "BlackFrameCorner"
+	BlackFrameCorner.Name = LibName.."BlackFrameCorner"..LibName
 	BlackFrameCorner.Parent = BlackFrame
 
-	ChangeAvatarText.Name = "ChangeAvatarText"
+	ChangeAvatarText.Name = LibName.."ChangeAvatarText"..LibName
 	ChangeAvatarText.Parent = BlackFrame
 	ChangeAvatarText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ChangeAvatarText.BackgroundTransparency = 1.000
@@ -665,17 +665,17 @@ function MaouLib:Window(text)
 	ChangeAvatarText.TextSize = 11.000
 	ChangeAvatarText.TextWrapped = true
 
-	SearchIcoFrame.Name = "SearchIcoFrame"
+	SearchIcoFrame.Name = LibName.."SearchIcoFrame"..LibName
 	SearchIcoFrame.Parent = UserPanelUserIcon
 	SearchIcoFrame.BackgroundColor3 = Color3.fromRGB(222, 222, 222)
 	SearchIcoFrame.Position = UDim2.new(0.657999992, 0, 0, 0)
 	SearchIcoFrame.Size = UDim2.new(0, 20, 0, 20)
 
 	SearchIcoFrameCorner.CornerRadius = UDim.new(1, 8)
-	SearchIcoFrameCorner.Name = "SearchIcoFrameCorner"
+	SearchIcoFrameCorner.Name = LibName.."SearchIcoFrameCorner"..LibName
 	SearchIcoFrameCorner.Parent = SearchIcoFrame
 
-	SearchIco.Name = "SearchIco"
+	SearchIco.Name = LibName.."SearchIco"..LibName
 	SearchIco.Parent = SearchIcoFrame
 	SearchIco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	SearchIco.BackgroundTransparency = 1.000
@@ -694,7 +694,7 @@ function MaouLib:Window(text)
 	
 	UserPanelUserIcon.MouseButton1Click:Connect(function()
 		local NotificationHolder = Instance.new("TextButton")
-		NotificationHolder.Name = "NotificationHolder"
+		NotificationHolder.Name = LibName.."NotificationHolder"..LibName
 		NotificationHolder.Parent = SettingsHolder
 		NotificationHolder.BackgroundColor3 = Color3.fromRGB(22,22,22)
 		NotificationHolder.Position = UDim2.new(-0.00881057233, 0, -0.00266666664, 0)
@@ -736,7 +736,7 @@ function MaouLib:Window(text)
 		local ResetCorner = Instance.new("UICorner")
 
 
-		AvatarChange.Name = "AvatarChange"
+		AvatarChange.Name = LibName.."AvatarChange"..LibName
 		AvatarChange.Parent = NotificationHolder
 		AvatarChange.AnchorPoint = Vector2.new(0.5, 0.5)
 		AvatarChange.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
@@ -754,27 +754,27 @@ function MaouLib:Window(text)
 
 
 		UserChangeCorner.CornerRadius = UDim.new(0, 5)
-		UserChangeCorner.Name = "UserChangeCorner"
+		UserChangeCorner.Name = LibName.."UserChangeCorner"..LibName
 		UserChangeCorner.Parent = AvatarChange
 
-		UnderBar.Name = "UnderBar"
+		UnderBar.Name = LibName.."UnderBar"..LibName
 		UnderBar.Parent = AvatarChange
 		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 13)
 
 		UnderBarCorner.CornerRadius = UDim.new(0, 5)
-		UnderBarCorner.Name = "UnderBarCorner"
+		UnderBarCorner.Name = LibName.."UnderBarCorner"..LibName
 		UnderBarCorner.Parent = UnderBar
 
-		UnderBarFrame.Name = "UnderBarFrame"
+		UnderBarFrame.Name = LibName.."UnderBarFrame"..LibName
 		UnderBarFrame.Parent = UnderBar
 		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBarFrame.BorderSizePixel = 0
 		UnderBarFrame.Position = UDim2.new(-0.000297061284, 0, -2.53846145, 0)
 		UnderBarFrame.Size = UDim2.new(0, 346, 0, 39)
 
-		Text1.Name = "Text1"
+		Text1.Name = LibName.."Text1"..LibName
 		Text1.Parent = AvatarChange
 		Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.BackgroundTransparency = 1.000
@@ -785,7 +785,7 @@ function MaouLib:Window(text)
 		Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.TextSize = 20.000
 
-		Text2.Name = "Text2"
+		Text2.Name = LibName.."Text2"..LibName
 		Text2.Parent = AvatarChange
 		Text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Text2.BackgroundTransparency = 1.000
@@ -796,7 +796,7 @@ function MaouLib:Window(text)
 		Text2.TextColor3 = Color3.fromRGB(171, 172, 176)
 		Text2.TextSize = 14.000
 
-		TextBoxFrame.Name = "TextBoxFrame"
+		TextBoxFrame.Name = LibName.."TextBoxFrame"..LibName
 		TextBoxFrame.Parent = AvatarChange
 		TextBoxFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 		TextBoxFrame.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
@@ -804,10 +804,10 @@ function MaouLib:Window(text)
 		TextBoxFrame.Size = UDim2.new(0, 319, 0, 38)
 
 		TextBoxFrameCorner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrameCorner.Name = "TextBoxFrameCorner"
+		TextBoxFrameCorner.Name = LibName.."TextBoxFrameCorner"..LibName
 		TextBoxFrameCorner.Parent = TextBoxFrame
 
-		TextBoxFrame1.Name = "TextBoxFrame1"
+		TextBoxFrame1.Name = LibName.."TextBoxFrame1"..LibName
 		TextBoxFrame1.Parent = TextBoxFrame
 		TextBoxFrame1.AnchorPoint = Vector2.new(0.5, 0.5)
 		TextBoxFrame1.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
@@ -816,10 +816,10 @@ function MaouLib:Window(text)
 		TextBoxFrame1.Size = UDim2.new(0, 317, 0, 36)
 
 		TextBoxFrame1Corner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrame1Corner.Name = "TextBoxFrame1Corner"
+		TextBoxFrame1Corner.Name = LibName.."TextBoxFrame1Corner"..LibName
 		TextBoxFrame1Corner.Parent = TextBoxFrame1
 
-		AvatarTextbox.Name = "AvatarTextbox"
+		AvatarTextbox.Name = LibName.."AvatarTextbox"..LibName
 		AvatarTextbox.Parent = TextBoxFrame1
 		AvatarTextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		AvatarTextbox.BackgroundTransparency = 1.000
@@ -831,7 +831,7 @@ function MaouLib:Window(text)
 		AvatarTextbox.TextSize = 14.000
 		AvatarTextbox.TextXAlignment = Enum.TextXAlignment.Left
 
-		ChangeBtn.Name = "ChangeBtn"
+		ChangeBtn.Name = LibName.."ChangeBtn"..LibName
 		ChangeBtn.Parent = AvatarChange
 		ChangeBtn.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 		ChangeBtn.Position = UDim2.new(0.749670506, 0, 0.823232353, 0)
@@ -882,10 +882,10 @@ function MaouLib:Window(text)
 		
 
 		ChangeCorner.CornerRadius = UDim.new(0, 4)
-		ChangeCorner.Name = "ChangeCorner"
+		ChangeCorner.Name = LibName.."ChangeCorner"..LibName
 		ChangeCorner.Parent = ChangeBtn
 
-		CloseBtn2.Name = "CloseBtn2"
+		CloseBtn2.Name = LibName.."CloseBtn2"..LibName
 		CloseBtn2.Parent = AvatarChange
 		CloseBtn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn2.BackgroundTransparency = 1.000
@@ -896,7 +896,7 @@ function MaouLib:Window(text)
 		CloseBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn2.TextSize = 14.000
 
-		Close2Icon.Name = "Close2Icon"
+		Close2Icon.Name = LibName.."Close2Icon"..LibName
 		Close2Icon.Parent = CloseBtn2
 		Close2Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Close2Icon.BackgroundTransparency = 1.000
@@ -905,7 +905,7 @@ function MaouLib:Window(text)
 		Close2Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
 		Close2Icon.ImageColor3 = Color3.fromRGB(119, 122, 127)
 
-		CloseBtn1.Name = "CloseBtn1"
+		CloseBtn1.Name = LibName.."CloseBtn1"..LibName
 		CloseBtn1.Parent = AvatarChange
 		CloseBtn1.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 		CloseBtn1.BackgroundTransparency = 1.000
@@ -917,10 +917,10 @@ function MaouLib:Window(text)
 		CloseBtn1.TextSize = 13.000
 
 		CloseBtn1Corner.CornerRadius = UDim.new(0, 4)
-		CloseBtn1Corner.Name = "CloseBtn1Corner"
+		CloseBtn1Corner.Name = LibName.."CloseBtn1Corner"..LibName
 		CloseBtn1Corner.Parent = CloseBtn1
 
-		ResetBtn.Name = "ResetBtn"
+		ResetBtn.Name = LibName.."ResetBtn"..LibName
 		ResetBtn.Parent = AvatarChange
 		ResetBtn.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 		ResetBtn.BackgroundTransparency = 1.000
@@ -953,7 +953,7 @@ function MaouLib:Window(text)
 		end)
 
 		ResetCorner.CornerRadius = UDim.new(0, 4)
-		ResetCorner.Name = "ResetCorner"
+		ResetCorner.Name = LibName.."ResetCorner"..LibName
 		ResetCorner.Parent = ResetBtn
 		
 		CloseBtn1.MouseButton1Click:Connect(function()
@@ -1024,14 +1024,14 @@ function MaouLib:Window(text)
 
 	end)
 
-	UserPanelUserTag.Name = "UserPanelUserTag"
+	UserPanelUserTag.Name = LibName.."UserPanelUserTag"..LibName
 	UserPanelUserTag.Parent = UserPanel
 	UserPanelUserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserPanelUserTag.BackgroundTransparency = 1.000
 	UserPanelUserTag.Position = UDim2.new(0.271143615, 0, 0.231804818, 0)
 	UserPanelUserTag.Size = UDim2.new(0, 113, 0, 19)
 
-	UserPanelUser.Name = "UserPanelUser"
+	UserPanelUser.Name = LibName.."UserPanelUser"..LibName
 	UserPanelUser.Parent = UserPanelUserTag
 	UserPanelUser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserPanelUser.BackgroundTransparency = 1.000
@@ -1043,12 +1043,12 @@ function MaouLib:Window(text)
 	UserPanelUser.Size = UDim2.new(0, UserPanelUser.TextBounds.X + 2, 0, 19)
 
 	
-	UserPanelUserTagLayout.Name = "UserPanelUserTagLayout"
+	UserPanelUserTagLayout.Name = LibName.."UserPanelUserTagLayout"..LibName
 	UserPanelUserTagLayout.Parent = UserPanelUserTag
 	UserPanelUserTagLayout.FillDirection = Enum.FillDirection.Horizontal
 	UserPanelUserTagLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
-	UserPanelTag.Name = "UserPanelTag"
+	UserPanelTag.Name = LibName.."UserPanelTag"..LibName
 	UserPanelTag.Parent = UserPanelUserTag
 	UserPanelTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserPanelTag.BackgroundTransparency = 1.000
@@ -1060,17 +1060,17 @@ function MaouLib:Window(text)
 	UserPanelTag.TextSize = 17.000
 	UserPanelTag.TextXAlignment = Enum.TextXAlignment.Left
 
-	UserPanelCorner.Name = "UserPanelCorner"
+	UserPanelCorner.Name = LibName.."UserPanelCorner"..LibName
 	UserPanelCorner.Parent = UserPanel
 
-	LeftFrame.Name = "LeftFrame"
+	LeftFrame.Name = LibName.."LeftFrame"..LibName
 	LeftFrame.Parent = SettingsHolder
 	LeftFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 	LeftFrame.BorderSizePixel = 0
 	LeftFrame.Position = UDim2.new(0, 0, -0.000303059904, 0)
 	LeftFrame.Size = UDim2.new(0, 233, 0, 375)
 
-	MyAccountBtn.Name = "MyAccountBtn"
+	MyAccountBtn.Name = LibName.."MyAccountBtn"..LibName
 	MyAccountBtn.Parent = LeftFrame
 	MyAccountBtn.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
 	MyAccountBtn.BorderSizePixel = 0
@@ -1083,10 +1083,10 @@ function MaouLib:Window(text)
 	MyAccountBtn.TextSize = 14.000
 
 	MyAccountBtnCorner.CornerRadius = UDim.new(0, 6)
-	MyAccountBtnCorner.Name = "MyAccountBtnCorner"
+	MyAccountBtnCorner.Name = LibName.."MyAccountBtnCorner"..LibName
 	MyAccountBtnCorner.Parent = MyAccountBtn
 
-	MyAccountBtnTitle.Name = "MyAccountBtnTitle"
+	MyAccountBtnTitle.Name = LibName.."MyAccountBtnTitle"..LibName
 	MyAccountBtnTitle.Parent = MyAccountBtn
 	MyAccountBtnTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MyAccountBtnTitle.BackgroundTransparency = 1.000
@@ -1099,7 +1099,7 @@ function MaouLib:Window(text)
 	MyAccountBtnTitle.TextSize = 14.000
 	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-	SettingsTitle.Name = "SettingsTitle"
+	SettingsTitle.Name = LibName.."SettingsTitle"..LibName
 	SettingsTitle.Parent = LeftFrame
 	SettingsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	SettingsTitle.BackgroundTransparency = 1.000
@@ -1111,7 +1111,7 @@ function MaouLib:Window(text)
 	SettingsTitle.TextSize = 11.000
 	SettingsTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-	DiscordInfo.Name = "MaouInfo"
+	DiscordInfo.Name = LibName.."MaouInfo"..LibName
 	DiscordInfo.Parent = LeftFrame
 	DiscordInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	DiscordInfo.BackgroundTransparency = 1.000
@@ -1125,7 +1125,7 @@ function MaouLib:Window(text)
 	DiscordInfo.TextXAlignment = Enum.TextXAlignment.Left
 	DiscordInfo.TextYAlignment = Enum.TextYAlignment.Top
 
-	CurrentSettingOpen.Name = "CurrentSettingOpen"
+	CurrentSettingOpen.Name = LibName.."CurrentSettingOpen"..LibName
 	CurrentSettingOpen.Parent = LeftFrame
 	CurrentSettingOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	CurrentSettingOpen.BackgroundTransparency = 1.000
@@ -1162,7 +1162,7 @@ function MaouLib:Window(text)
 	
 	EditBtn.MouseButton1Click:Connect(function()
 		local NotificationHolder = Instance.new("TextButton")
-		NotificationHolder.Name = "NotificationHolder"
+		NotificationHolder.Name = LibName.."NotificationHolder"..LibName
 		NotificationHolder.Parent = SettingsHolder
 		NotificationHolder.BackgroundColor3 = Color3.fromRGB(22,22,22)
 		NotificationHolder.Position = UDim2.new(-0.00881057233, 0, -0.00266666664, 0)
@@ -1202,7 +1202,7 @@ function MaouLib:Window(text)
 		local CloseBtn1 = Instance.new("TextButton")
 		local CloseBtn1Corner = Instance.new("UICorner")
 
-		UserChange.Name = "UserChange"
+		UserChange.Name = LibName.."UserChange"..LibName
 		UserChange.Parent = NotificationHolder
 		UserChange.AnchorPoint = Vector2.new(0.5, 0.5)
 		UserChange.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
@@ -1219,27 +1219,27 @@ function MaouLib:Window(text)
 		):Play()
 		
 		UserChangeCorner.CornerRadius = UDim.new(0, 5)
-		UserChangeCorner.Name = "UserChangeCorner"
+		UserChangeCorner.Name = LibName.."UserChangeCorner"..LibName
 		UserChangeCorner.Parent = UserChange
 
-		UnderBar.Name = "UnderBar"
+		UnderBar.Name = LibName.."UnderBar"..LibName
 		UnderBar.Parent = UserChange
 		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 13)
 
 		UnderBarCorner.CornerRadius = UDim.new(0, 5)
-		UnderBarCorner.Name = "UnderBarCorner"
+		UnderBarCorner.Name = LibName.."UnderBarCorner"..LibName
 		UnderBarCorner.Parent = UnderBar
 
-		UnderBarFrame.Name = "UnderBarFrame"
+		UnderBarFrame.Name = LibName.."UnderBarFrame"..LibName
 		UnderBarFrame.Parent = UnderBar
 		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBarFrame.BorderSizePixel = 0
 		UnderBarFrame.Position = UDim2.new(-0.000297061284, 0, -2.53846145, 0)
 		UnderBarFrame.Size = UDim2.new(0, 346, 0, 39)
 
-		Text1.Name = "Text1"
+		Text1.Name = LibName.."Text1"..LibName
 		Text1.Parent = UserChange
 		Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.BackgroundTransparency = 1.000
@@ -1250,7 +1250,7 @@ function MaouLib:Window(text)
 		Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.TextSize = 20.000
 
-		Text2.Name = "Text2"
+		Text2.Name = LibName.."Text2"..LibName
 		Text2.Parent = UserChange
 		Text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Text2.BackgroundTransparency = 1.000
@@ -1261,7 +1261,7 @@ function MaouLib:Window(text)
 		Text2.TextColor3 = Color3.fromRGB(171, 172, 176)
 		Text2.TextSize = 14.000
 
-		TextBoxFrame.Name = "TextBoxFrame"
+		TextBoxFrame.Name = LibName.."TextBoxFrame"..LibName
 		TextBoxFrame.Parent = UserChange
 		TextBoxFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 		TextBoxFrame.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
@@ -1269,10 +1269,10 @@ function MaouLib:Window(text)
 		TextBoxFrame.Size = UDim2.new(0, 319, 0, 38)
 
 		TextBoxFrameCorner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrameCorner.Name = "TextBoxFrameCorner"
+		TextBoxFrameCorner.Name = LibName.."TextBoxFrameCorner"..LibName
 		TextBoxFrameCorner.Parent = TextBoxFrame
 
-		TextBoxFrame1.Name = "TextBoxFrame1"
+		TextBoxFrame1.Name = LibName.."TextBoxFrame1"..LibName
 		TextBoxFrame1.Parent = TextBoxFrame
 		TextBoxFrame1.AnchorPoint = Vector2.new(0.5, 0.5)
 		TextBoxFrame1.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
@@ -1280,10 +1280,10 @@ function MaouLib:Window(text)
 		TextBoxFrame1.Size = UDim2.new(0, 317, 0, 36)
 
 		TextBoxFrame1Corner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrame1Corner.Name = "TextBoxFrame1Corner"
+		TextBoxFrame1Corner.Name = LibName.."TextBoxFrame1Corner"..LibName
 		TextBoxFrame1Corner.Parent = TextBoxFrame1
 
-		UsernameTextbox.Name = "UsernameTextbox"
+		UsernameTextbox.Name = LibName.."UsernameTextbox"..LibName
 		UsernameTextbox.Parent = TextBoxFrame1
 		UsernameTextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		UsernameTextbox.BackgroundTransparency = 1.000
@@ -1295,7 +1295,7 @@ function MaouLib:Window(text)
 		UsernameTextbox.TextSize = 14.000
 		UsernameTextbox.TextXAlignment = Enum.TextXAlignment.Left
 
-		Seperator.Name = "Seperator"
+		Seperator.Name = LibName.."Seperator"..LibName
 		Seperator.Parent = TextBoxFrame1
 		Seperator.AnchorPoint = Vector2.new(0.5, 0.5)
 		Seperator.BackgroundColor3 = Color3.fromRGB(64, 68, 73)
@@ -1303,7 +1303,7 @@ function MaouLib:Window(text)
 		Seperator.Position = UDim2.new(0.753000021, 0, 0.500999987, 0)
 		Seperator.Size = UDim2.new(0, 1, 0, 25)
 
-		HashtagLabel.Name = "HashtagLabel"
+		HashtagLabel.Name = LibName.."HashtagLabel"..LibName
 		HashtagLabel.Parent = TextBoxFrame1
 		HashtagLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		HashtagLabel.BackgroundTransparency = 1.000
@@ -1314,7 +1314,7 @@ function MaouLib:Window(text)
 		HashtagLabel.TextColor3 = Color3.fromRGB(79, 82, 88)
 		HashtagLabel.TextSize = 16.000
 
-		TagTextbox.Name = "TagTextbox"
+		TagTextbox.Name = LibName.."TagTextbox"..LibName
 		TagTextbox.Parent = TextBoxFrame1
 		TagTextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TagTextbox.BackgroundTransparency = 1.000
@@ -1327,7 +1327,7 @@ function MaouLib:Window(text)
 		TagTextbox.TextSize = 14.000
 		TagTextbox.TextXAlignment = Enum.TextXAlignment.Left
 
-		ChangeBtn.Name = "ChangeBtn"
+		ChangeBtn.Name = LibName.."ChangeBtn"..LibName
 		ChangeBtn.Parent = UserChange
 		ChangeBtn.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 		ChangeBtn.Position = UDim2.new(0.749670506, 0, 0.823232353, 0)
@@ -1383,10 +1383,10 @@ function MaouLib:Window(text)
 		end)
 
 		ChangeCorner.CornerRadius = UDim.new(0, 4)
-		ChangeCorner.Name = "ChangeCorner"
+		ChangeCorner.Name = LibName.."ChangeCorner"..LibName
 		ChangeCorner.Parent = ChangeBtn
 
-		CloseBtn2.Name = "CloseBtn2"
+		CloseBtn2.Name = LibName.."CloseBtn2"..LibName
 		CloseBtn2.Parent = UserChange
 		CloseBtn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn2.BackgroundTransparency = 1.000
@@ -1397,7 +1397,7 @@ function MaouLib:Window(text)
 		CloseBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn2.TextSize = 14.000
 
-		Close2Icon.Name = "Close2Icon"
+		Close2Icon.Name = LibName.."Close2Icon"..LibName
 		Close2Icon.Parent = CloseBtn2
 		Close2Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Close2Icon.BackgroundTransparency = 1.000
@@ -1406,7 +1406,7 @@ function MaouLib:Window(text)
 		Close2Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
 		Close2Icon.ImageColor3 = Color3.fromRGB(119, 122, 127)
 
-		CloseBtn1.Name = "CloseBtn1"
+		CloseBtn1.Name = LibName.."CloseBtn1"..LibName
 		CloseBtn1.Parent = UserChange
 		CloseBtn1.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 		CloseBtn1.BackgroundTransparency = 1.000
@@ -1418,7 +1418,7 @@ function MaouLib:Window(text)
 		CloseBtn1.TextSize = 13.000
 
 		CloseBtn1Corner.CornerRadius = UDim.new(0, 4)
-		CloseBtn1Corner.Name = "CloseBtn1Corner"
+		CloseBtn1Corner.Name = LibName.."CloseBtn1Corner"..LibName
 		CloseBtn1Corner.Parent = CloseBtn1
 		
 		CloseBtn1.MouseButton1Click:Connect(function()
@@ -1527,7 +1527,7 @@ function MaouLib:Window(text)
 		local AlrightBtn = Instance.new("TextButton")
 		local AlrightCorner = Instance.new("UICorner")
 
-		NotificationHolderMain.Name = "NotificationHolderMain"
+		NotificationHolderMain.Name = LibName.."NotificationHolderMain"..LibName
 		NotificationHolderMain.Parent = MainFrame
 		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
 		NotificationHolderMain.BackgroundTransparency = 1
@@ -1546,7 +1546,7 @@ function MaouLib:Window(text)
 		):Play()
 		
 
-		Notification.Name = "Notification"
+		Notification.Name = LibName.."Notification"..LibName
 		Notification.Parent = NotificationHolderMain
 		Notification.AnchorPoint = Vector2.new(0.5, 0.5)
 		Notification.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
@@ -1564,27 +1564,27 @@ function MaouLib:Window(text)
 		):Play()
 
 		NotificationCorner.CornerRadius = UDim.new(0, 5)
-		NotificationCorner.Name = "NotificationCorner"
+		NotificationCorner.Name = LibName.."NotificationCorner"..LibName
 		NotificationCorner.Parent = Notification
 
-		UnderBar.Name = "UnderBar"
+		UnderBar.Name = LibName.."UnderBar"..LibName
 		UnderBar.Parent = Notification
 		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 10)
 
 		UnderBarCorner.CornerRadius = UDim.new(0, 5)
-		UnderBarCorner.Name = "UnderBarCorner"
+		UnderBarCorner.Name = LibName.."UnderBarCorner"..LibName
 		UnderBarCorner.Parent = UnderBar
 
-		UnderBarFrame.Name = "UnderBarFrame"
+		UnderBarFrame.Name = LibName.."UnderBarFrame"..LibName
 		UnderBarFrame.Parent = UnderBar
 		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBarFrame.BorderSizePixel = 0
 		UnderBarFrame.Position = UDim2.new(-0.000297061284, 0, -3.76068449, 0)
 		UnderBarFrame.Size = UDim2.new(0, 346, 0, 40)
 
-		Text1.Name = "Text1"
+		Text1.Name = LibName.."Text1"..LibName
 		Text1.Parent = Notification
 		Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.BackgroundTransparency = 1.000
@@ -1595,7 +1595,7 @@ function MaouLib:Window(text)
 		Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.TextSize = 20.000
 
-		Text2.Name = "Text2"
+		Text2.Name = LibName.."Text2"..LibName
 		Text2.Parent = Notification
 		Text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Text2.BackgroundTransparency = 1.000
@@ -1607,7 +1607,7 @@ function MaouLib:Window(text)
 		Text2.TextSize = 14.000
 		Text2.TextWrapped = true
 
-		AlrightBtn.Name = "AlrightBtn"
+		AlrightBtn.Name = LibName.."AlrightBtn"..LibName
 		AlrightBtn.Parent = Notification
 		AlrightBtn.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 		AlrightBtn.Position = UDim2.new(0.0332369953, 0, 0.789141417, 0)
@@ -1619,7 +1619,7 @@ function MaouLib:Window(text)
 		AlrightBtn.AutoButtonColor = false
 		
 		AlrightCorner.CornerRadius = UDim.new(0, 4)
-		AlrightCorner.Name = "AlrightCorner"
+		AlrightCorner.Name = LibName.."AlrightCorner"..LibName
 		AlrightCorner.Parent = AlrightBtn
 		
 		AlrightBtn.MouseButton1Click:Connect(function()
@@ -1679,10 +1679,10 @@ function MaouLib:Window(text)
 		Server.TextSize = 18.000
 
 		ServerBtnCorner.CornerRadius = UDim.new(1, 0)
-		ServerBtnCorner.Name = "ServerCorner"
+		ServerBtnCorner.Name = LibName.."ServerCorner"..LibName
 		ServerBtnCorner.Parent = Server
 
-		ServerIco.Name = "ServerIco"
+		ServerIco.Name = LibName.."ServerIco"..LibName
 		ServerIco.Parent = Server
 		ServerIco.AnchorPoint = Vector2.new(0.5, 0.5)
 		ServerIco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1691,7 +1691,7 @@ function MaouLib:Window(text)
 		ServerIco.Size = UDim2.new(0, 26, 0, 26)
 		ServerIco.Image = ""
 
-		ServerWhiteFrame.Name = "ServerWhiteFrame"
+		ServerWhiteFrame.Name = LibName.."ServerWhiteFrame"..LibName
 		ServerWhiteFrame.Parent = Server
 		ServerWhiteFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 		ServerWhiteFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1699,7 +1699,7 @@ function MaouLib:Window(text)
 		ServerWhiteFrame.Size = UDim2.new(0, 11, 0, 10)
 
 		ServerWhiteFrameCorner.CornerRadius = UDim.new(1, 0)
-		ServerWhiteFrameCorner.Name = "ServerWhiteFrameCorner"
+		ServerWhiteFrameCorner.Name = LibName.."ServerWhiteFrameCorner"..LibName
 		ServerWhiteFrameCorner.Parent = ServerWhiteFrame
 		ServersHold.CanvasSize = UDim2.new(0, 0, 0, ServersHoldLayout.AbsoluteContentSize.Y)
 
@@ -1722,7 +1722,7 @@ function MaouLib:Window(text)
 		local ServerChannelHolderPadding = Instance.new("UIPadding")
 
 
-		ServerFrame.Name = "ServerFrame"
+		ServerFrame.Name = LibName.."ServerFrame"..LibName
 		ServerFrame.Parent = ServersHolder
 		ServerFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		ServerFrame.BorderSizePixel = 0
@@ -1731,21 +1731,21 @@ function MaouLib:Window(text)
 		ServerFrame.Size = UDim2.new(0, 609, 0, 373)
 		ServerFrame.Visible = false
 
-		ServerFrame1.Name = "ServerFrame1"
+		ServerFrame1.Name = LibName.."ServerFrame1"..LibName
 		ServerFrame1.Parent = ServerFrame
 		ServerFrame1.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		ServerFrame1.BorderSizePixel = 0
 		ServerFrame1.Position = UDim2.new(0, 0, 0.972290039, 0)
 		ServerFrame1.Size = UDim2.new(0, 12, 0, 10)
 
-		ServerFrame2.Name = "ServerFrame2"
+		ServerFrame2.Name = LibName.."ServerFrame2"..LibName
 		ServerFrame2.Parent = ServerFrame
 		ServerFrame2.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		ServerFrame2.BorderSizePixel = 0
 		ServerFrame2.Position = UDim2.new(0.980295539, 0, 0.972290039, 0)
 		ServerFrame2.Size = UDim2.new(0, 12, 0, 9)
 
-		ServerTitleFrame.Name = "ServerTitleFrame"
+		ServerTitleFrame.Name = LibName.."ServerTitleFrame"..LibName
 		ServerTitleFrame.Parent = ServerFrame
 		ServerTitleFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		ServerTitleFrame.BackgroundTransparency = 1.000
@@ -1753,7 +1753,7 @@ function MaouLib:Window(text)
 		ServerTitleFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
 		ServerTitleFrame.Size = UDim2.new(0, 180, 0, 40)
 
-		ServerTitle.Name = "ServerTitle"
+		ServerTitle.Name = LibName.."ServerTitle"..LibName
 		ServerTitle.Parent = ServerTitleFrame
 		ServerTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ServerTitle.BackgroundTransparency = 1.000
@@ -1766,7 +1766,7 @@ function MaouLib:Window(text)
 		ServerTitle.TextSize = 15.000
 		ServerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-		GlowFrame.Name = "GlowFrame"
+		GlowFrame.Name = LibName.."GlowFrame"..LibName
 		GlowFrame.Parent = ServerFrame
 		GlowFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		GlowFrame.BackgroundTransparency = 1.000
@@ -1774,7 +1774,7 @@ function MaouLib:Window(text)
 		GlowFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
 		GlowFrame.Size = UDim2.new(0, 609, 0, 40)
 
-		Glow.Name = "Glow"
+		Glow.Name = LibName.."Glow"..LibName
 		Glow.Parent = GlowFrame
 		Glow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Glow.BackgroundTransparency = 1.000
@@ -1787,7 +1787,7 @@ function MaouLib:Window(text)
 		Glow.ScaleType = Enum.ScaleType.Slice
 		Glow.SliceCenter = Rect.new(20, 20, 280, 280)
 
-		ServerContentFrame.Name = "ServerContentFrame"
+		ServerContentFrame.Name = LibName.."ServerContentFrame"..LibName
 		ServerContentFrame.Parent = ServerFrame
 		ServerContentFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		ServerContentFrame.BackgroundTransparency = 1.000
@@ -1796,17 +1796,17 @@ function MaouLib:Window(text)
 		ServerContentFrame.Size = UDim2.new(0, 180, 0, 333)
 
 		ServerCorner.CornerRadius = UDim.new(0, 9)
-		ServerCorner.Name = "ServerCorner"
+		ServerCorner.Name = LibName.."ServerCorner"..LibName
 		ServerCorner.Parent = ServerFrame
 
-		ChannelTitleFrame.Name = "ChannelTitleFrame"
+		ChannelTitleFrame.Name = LibName.."ChannelTitleFrame"..LibName
 		ChannelTitleFrame.Parent = ServerFrame
 		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
 
-		Hashtag.Name = "Hashtag"
+		Hashtag.Name = LibName.."Hashtag"..LibName
 		Hashtag.Parent = ChannelTitleFrame
 		Hashtag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Hashtag.BackgroundTransparency = 1.000
@@ -1818,7 +1818,7 @@ function MaouLib:Window(text)
 		Hashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 		Hashtag.TextSize = 25.000
 
-		ChannelTitle.Name = "ChannelTitle"
+		ChannelTitle.Name = LibName.."ChannelTitle"..LibName
 		ChannelTitle.Parent = ChannelTitleFrame
 		ChannelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ChannelTitle.BackgroundTransparency = 1.000
@@ -1831,7 +1831,7 @@ function MaouLib:Window(text)
 		ChannelTitle.TextSize = 15.000
 		ChannelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-		ChannelContentFrame.Name = "ChannelContentFrame"
+		ChannelContentFrame.Name = LibName.."ChannelContentFrame"..LibName
 		ChannelContentFrame.Parent = ServerFrame
 		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 		ChannelContentFrame.BorderSizePixel = 0
@@ -1839,7 +1839,7 @@ function MaouLib:Window(text)
 		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
 		ChannelContentFrame.Size = UDim2.new(0, 429, 0, 333)
 
-		GlowChannel.Name = "GlowChannel"
+		GlowChannel.Name = LibName.."GlowChannel"..LibName
 		GlowChannel.Parent = ChannelContentFrame
 		GlowChannel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		GlowChannel.BackgroundTransparency = 1.000
@@ -1852,7 +1852,7 @@ function MaouLib:Window(text)
 		GlowChannel.ScaleType = Enum.ScaleType.Slice
 		GlowChannel.SliceCenter = Rect.new(20, 20, 280, 280)
 
-		ServerChannelHolder.Name = "ServerChannelHolder"
+		ServerChannelHolder.Name = LibName.."ServerChannelHolder"..LibName
 		ServerChannelHolder.Parent = ServerContentFrame
 		ServerChannelHolder.Active = true
 		ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1866,12 +1866,12 @@ function MaouLib:Window(text)
 		ServerChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
 		ServerChannelHolder.ScrollBarImageTransparency = 1
 
-		ServerChannelHolderLayout.Name = "ServerChannelHolderLayout"
+		ServerChannelHolderLayout.Name = LibName.."ServerChannelHolderLayout"..LibName
 		ServerChannelHolderLayout.Parent = ServerChannelHolder
 		ServerChannelHolderLayout.SortOrder = Enum.SortOrder.LayoutOrder
 		ServerChannelHolderLayout.Padding = UDim.new(0, 4)
 
-		ServerChannelHolderPadding.Name = "ServerChannelHolderPadding"
+		ServerChannelHolderPadding.Name = LibName.."ServerChannelHolderPadding"..LibName
 		ServerChannelHolderPadding.Parent = ServerChannelHolder
 		ServerChannelHolderPadding.PaddingLeft = UDim.new(0, 9)
 		
@@ -2030,10 +2030,10 @@ function MaouLib:Window(text)
 			ChannelBtn.TextSize = 14.000
 
 			ChannelBtnCorner.CornerRadius = UDim.new(0, 6)
-			ChannelBtnCorner.Name = "ChannelBtnCorner"
+			ChannelBtnCorner.Name = LibName.."ChannelBtnCorner"..LibName
 			ChannelBtnCorner.Parent = ChannelBtn
 
-			ChannelBtnHashtag.Name = "ChannelBtnHashtag"
+			ChannelBtnHashtag.Name = LibName.."ChannelBtnHashtag"..LibName
 			ChannelBtnHashtag.Parent = ChannelBtn
 			ChannelBtnHashtag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ChannelBtnHashtag.BackgroundTransparency = 1.000
@@ -2045,7 +2045,7 @@ function MaouLib:Window(text)
 			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 			ChannelBtnHashtag.TextSize = 21.000
 
-			ChannelBtnTitle.Name = "ChannelBtnTitle"
+			ChannelBtnTitle.Name = LibName.."ChannelBtnTitle"..LibName
 			ChannelBtnTitle.Parent = ChannelBtn
 			ChannelBtnTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ChannelBtnTitle.BackgroundTransparency = 1.000
@@ -2062,7 +2062,7 @@ function MaouLib:Window(text)
 			local ChannelHolder = Instance.new("ScrollingFrame")
 			local ChannelHolderLayout = Instance.new("UIListLayout")
 
-			ChannelHolder.Name = "ChannelHolder"
+			ChannelHolder.Name = LibName.."ChannelHolder"..LibName
 			ChannelHolder.Parent = ChannelContentFrame
 			ChannelHolder.Active = true
 			ChannelHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2077,7 +2077,7 @@ function MaouLib:Window(text)
 			ChannelHolder.Visible = false
 			ChannelHolder.ClipsDescendants = false
 
-			ChannelHolderLayout.Name = "ChannelHolderLayout"
+			ChannelHolderLayout.Name = LibName.."ChannelHolderLayout"..LibName
 			ChannelHolderLayout.Parent = ChannelHolder
 			ChannelHolderLayout.SortOrder = Enum.SortOrder.LayoutOrder
 			ChannelHolderLayout.Padding = UDim.new(0, 6)
@@ -2129,7 +2129,7 @@ function MaouLib:Window(text)
 				local Button = Instance.new("TextButton")
 				local ButtonCorner = Instance.new("UICorner")
 
-				Button.Name = "Button"
+				Button.Name = LibName.."Button"..LibName
 				Button.Parent = ChannelHolder
 				Button.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 				Button.Size = UDim2.new(0, 401, 0, 30)
@@ -2140,7 +2140,7 @@ function MaouLib:Window(text)
 				Button.Text = text
 
 				ButtonCorner.CornerRadius = UDim.new(0, 4)
-				ButtonCorner.Name = "ButtonCorner"
+				ButtonCorner.Name = LibName.."ButtonCorner"..LibName
 				ButtonCorner.Parent = Button
 				
 				Button.MouseEnter:Connect(function()
@@ -2180,7 +2180,7 @@ function MaouLib:Window(text)
 				local ToggleFrameCircleCorner = Instance.new("UICorner")
 				local Icon = Instance.new("ImageLabel")
 
-				Toggle.Name = "Toggle"
+				Toggle.Name = LibName.."Toggle"..LibName
 				Toggle.Parent = ChannelHolder
 				Toggle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Toggle.BorderSizePixel = 0
@@ -2192,7 +2192,7 @@ function MaouLib:Window(text)
 				Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Toggle.TextSize = 14.000
 
-				ToggleTitle.Name = "ToggleTitle"
+				ToggleTitle.Name = LibName.."ToggleTitle"..LibName
 				ToggleTitle.Parent = Toggle
 				ToggleTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ToggleTitle.BackgroundTransparency = 1.000
@@ -2204,27 +2204,27 @@ function MaouLib:Window(text)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				ToggleFrame.Name = "ToggleFrame"
+				ToggleFrame.Name = LibName.."ToggleFrame"..LibName
 				ToggleFrame.Parent = Toggle
 				ToggleFrame.BackgroundColor3 = Color3.fromRGB(114, 118, 125)
 				ToggleFrame.Position = UDim2.new(0.900481343, -5, 0.13300018, 0)
 				ToggleFrame.Size = UDim2.new(0, 40, 0, 21)
 
 				ToggleFrameCorner.CornerRadius = UDim.new(1, 8)
-				ToggleFrameCorner.Name = "ToggleFrameCorner"
+				ToggleFrameCorner.Name = LibName.."ToggleFrameCorner"..LibName
 				ToggleFrameCorner.Parent = ToggleFrame
 
-				ToggleFrameCircle.Name = "ToggleFrameCircle"
+				ToggleFrameCircle.Name = LibName.."ToggleFrameCircle"..LibName
 				ToggleFrameCircle.Parent = ToggleFrame
 				ToggleFrameCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ToggleFrameCircle.Position = UDim2.new(0.234999999, -5, 0.133000001, 0)
 				ToggleFrameCircle.Size = UDim2.new(0, 15, 0, 15)
 
 				ToggleFrameCircleCorner.CornerRadius = UDim.new(1, 0)
-				ToggleFrameCircleCorner.Name = "ToggleFrameCircleCorner"
+				ToggleFrameCircleCorner.Name = LibName.."ToggleFrameCircleCorner"..LibName
 				ToggleFrameCircleCorner.Parent = ToggleFrameCircle
 
-				Icon.Name = "Icon"
+				Icon.Name = LibName.."Icon"..LibName
 				Icon.Parent = ToggleFrameCircle
 				Icon.AnchorPoint = Vector2.new(0.5, 0.5)
 				Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2310,7 +2310,7 @@ function MaouLib:Window(text)
 				local ValueLabel = Instance.new("TextLabel")
 
 
-				Slider.Name = "Slider"
+				Slider.Name = LibName.."Slider"..LibName
 				Slider.Parent = ChannelHolder
 				Slider.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Slider.BorderSizePixel = 0
@@ -2322,7 +2322,7 @@ function MaouLib:Window(text)
 				Slider.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Slider.TextSize = 14.000
 
-				SliderTitle.Name = "SliderTitle"
+				SliderTitle.Name = LibName.."SliderTitle"..LibName
 				SliderTitle.Parent = Slider
 				SliderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				SliderTitle.BackgroundTransparency = 1.000
@@ -2334,34 +2334,34 @@ function MaouLib:Window(text)
 				SliderTitle.TextSize = 14.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				SliderFrame.Name = "SliderFrame"
+				SliderFrame.Name = LibName.."SliderFrame"..LibName
 				SliderFrame.Parent = Slider
 				SliderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 				SliderFrame.BackgroundColor3 = Color3.fromRGB(79, 84, 92)
 				SliderFrame.Position = UDim2.new(0.497999996, 0, 0.757000029, 0)
 				SliderFrame.Size = UDim2.new(0, 385, 0, 8)
 
-				SliderFrameCorner.Name = "SliderFrameCorner"
+				SliderFrameCorner.Name = LibName.."SliderFrameCorner"..LibName
 				SliderFrameCorner.Parent = SliderFrame
 
-				CurrentValueFrame.Name = "CurrentValueFrame"
+				CurrentValueFrame.Name = LibName.."CurrentValueFrame"..LibName
 				CurrentValueFrame.Parent = SliderFrame
 				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
-				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
+				CurrentValueFrameCorner.Name = LibName.."CurrentValueFrameCorner"..LibName
 				CurrentValueFrameCorner.Parent = CurrentValueFrame
 
-				Zip.Name = "Zip"
+				Zip.Name = LibName.."Zip"..LibName
 				Zip.Parent = SliderFrame
 				Zip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Zip.Position = UDim2.new((start or 0)/max, -6,-0.644999981, 0)
 				Zip.Size = UDim2.new(0, 10, 0, 18)
 				ZipCorner.CornerRadius = UDim.new(0, 3)
-				ZipCorner.Name = "ZipCorner"
+				ZipCorner.Name = LibName.."ZipCorner"..LibName
 				ZipCorner.Parent = Zip
 
-				ValueBubble.Name = "ValueBubble"
+				ValueBubble.Name = LibName.."ValueBubble"..LibName
 				ValueBubble.Parent = Zip
 				ValueBubble.AnchorPoint = Vector2.new(0.5, 0.5)
 				ValueBubble.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
@@ -2384,10 +2384,10 @@ function MaouLib:Window(text)
 	
 
 				ValueBubbleCorner.CornerRadius = UDim.new(0, 3)
-				ValueBubbleCorner.Name = "ValueBubbleCorner"
+				ValueBubbleCorner.Name = LibName.."ValueBubbleCorner"..LibName
 				ValueBubbleCorner.Parent = ValueBubble
 
-				SquareBubble.Name = "SquareBubble"
+				SquareBubble.Name = LibName.."SquareBubble"..LibName
 				SquareBubble.Parent = ValueBubble
 				SquareBubble.AnchorPoint = Vector2.new(0.5, 0.5)
 				SquareBubble.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
@@ -2396,7 +2396,7 @@ function MaouLib:Window(text)
 				SquareBubble.Rotation = 45.000
 				SquareBubble.Size = UDim2.new(0, 19, 0, 19)
 
-				GlowBubble.Name = "GlowBubble"
+				GlowBubble.Name = LibName.."GlowBubble"..LibName
 				GlowBubble.Parent = ValueBubble
 				GlowBubble.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				GlowBubble.BackgroundTransparency = 1.000
@@ -2409,7 +2409,7 @@ function MaouLib:Window(text)
 				GlowBubble.ScaleType = Enum.ScaleType.Slice
 				GlowBubble.SliceCenter = Rect.new(20, 20, 280, 280)
 
-				ValueLabel.Name = "ValueLabel"
+				ValueLabel.Name = LibName.."ValueLabel"..LibName
 				ValueLabel.Parent = ValueBubble
 				ValueLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ValueLabel.BackgroundTransparency = 1.000
@@ -2477,14 +2477,14 @@ function MaouLib:Window(text)
 				local Seperator1 = Instance.new("Frame")
 				local Seperator2 = Instance.new("Frame")
 
-				Seperator1.Name = "Seperator1"
+				Seperator1.Name = LibName.."Seperator1"..LibName
 				Seperator1.Parent = ChannelHolder
 				Seperator1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Seperator1.BackgroundTransparency = 1.000
 				Seperator1.Position = UDim2.new(0, 0, 0.350318581, 0)
 				Seperator1.Size = UDim2.new(0, 100, 0, 8)
 
-				Seperator2.Name = "Seperator2"
+				Seperator2.Name = LibName.."Seperator2"..LibName
 				Seperator2.Parent = Seperator1
 				Seperator2.BackgroundColor3 = Color3.fromRGB(66, 69, 74)
 				Seperator2.BorderSizePixel = 0
@@ -2507,14 +2507,14 @@ function MaouLib:Window(text)
 				local ArrowImg = Instance.new("ImageLabel")
 				local DropdownFrameBtn = Instance.new("TextButton")
 
-				Dropdown.Name = "Dropdown"
+				Dropdown.Name = LibName.."Dropdown"..LibName
 				Dropdown.Parent = ChannelHolder
 				Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Dropdown.BackgroundTransparency = 1.000
 				Dropdown.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Dropdown.Size = UDim2.new(0, 403, 0, 73)
 
-				DropdownTitle.Name = "DropdownTitle"
+				DropdownTitle.Name = LibName.."DropdownTitle"..LibName
 				DropdownTitle.Parent = Dropdown
 				DropdownTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				DropdownTitle.BackgroundTransparency = 1.000
@@ -2526,7 +2526,7 @@ function MaouLib:Window(text)
 				DropdownTitle.TextSize = 14.000
 				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				DropdownFrameOutline.Name = "DropdownFrameOutline"
+				DropdownFrameOutline.Name = LibName.."DropdownFrameOutline"..LibName
 				DropdownFrameOutline.Parent = DropdownTitle
 				DropdownFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
 				DropdownFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
@@ -2534,10 +2534,10 @@ function MaouLib:Window(text)
 				DropdownFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
 				DropdownFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameOutlineCorner.Name = "DropdownFrameOutlineCorner"
+				DropdownFrameOutlineCorner.Name = LibName.."DropdownFrameOutlineCorner"..LibName
 				DropdownFrameOutlineCorner.Parent = DropdownFrameOutline
 
-				DropdownFrame.Name = "DropdownFrame"
+				DropdownFrame.Name = LibName.."DropdownFrame"..LibName
 				DropdownFrame.Parent = DropdownTitle
 				DropdownFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
 				DropdownFrame.ClipsDescendants = true
@@ -2546,10 +2546,10 @@ function MaouLib:Window(text)
 				DropdownFrame.Size = UDim2.new(0, 392, 0, 32)
 
 				DropdownFrameCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameCorner.Name = "DropdownFrameCorner"
+				DropdownFrameCorner.Name = LibName.."DropdownFrameCorner"..LibName
 				DropdownFrameCorner.Parent = DropdownFrame
 
-				CurrentSelectedText.Name = "CurrentSelectedText"
+				CurrentSelectedText.Name = LibName.."CurrentSelectedText"..LibName
 				CurrentSelectedText.Parent = DropdownFrame
 				CurrentSelectedText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				CurrentSelectedText.BackgroundTransparency = 1.000
@@ -2561,7 +2561,7 @@ function MaouLib:Window(text)
 				CurrentSelectedText.TextSize = 14.000
 				CurrentSelectedText.TextXAlignment = Enum.TextXAlignment.Left
 
-				ArrowImg.Name = "ArrowImg"
+				ArrowImg.Name = LibName.."ArrowImg"..LibName
 				ArrowImg.Parent = CurrentSelectedText
 				ArrowImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ArrowImg.BackgroundTransparency = 1.000
@@ -2570,7 +2570,7 @@ function MaouLib:Window(text)
 				ArrowImg.Image = "http://www.roblox.com/asset/?id=6034818372"
 				ArrowImg.ImageColor3 = Color3.fromRGB(212, 212, 212)
 
-				DropdownFrameBtn.Name = "DropdownFrameBtn"
+				DropdownFrameBtn.Name = LibName.."DropdownFrameBtn"..LibName
 				DropdownFrameBtn.Parent = DropdownFrame
 				DropdownFrameBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				DropdownFrameBtn.BackgroundTransparency = 1.000
@@ -2588,7 +2588,7 @@ function MaouLib:Window(text)
 				local DropItemHolder = Instance.new("ScrollingFrame")
 				local DropItemHolderLayout = Instance.new("UIListLayout")
 
-				DropdownFrameMainOutline.Name = "DropdownFrameMainOutline"
+				DropdownFrameMainOutline.Name = LibName.."DropdownFrameMainOutline"..LibName
 				DropdownFrameMainOutline.Parent = DropdownTitle
 				DropdownFrameMainOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
 				DropdownFrameMainOutline.Position = UDim2.new(-0.00155700743, 0, 2.16983342, 0)
@@ -2596,10 +2596,10 @@ function MaouLib:Window(text)
 				DropdownFrameMainOutline.Visible = false
 
 				DropdownFrameMainOutlineCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameMainOutlineCorner.Name = "DropdownFrameMainOutlineCorner"
+				DropdownFrameMainOutlineCorner.Name = LibName.."DropdownFrameMainOutlineCorner"..LibName
 				DropdownFrameMainOutlineCorner.Parent = DropdownFrameMainOutline
 
-				DropdownFrameMain.Name = "DropdownFrameMain"
+				DropdownFrameMain.Name = LibName.."DropdownFrameMain"..LibName
 				DropdownFrameMain.Parent = DropdownTitle
 				DropdownFrameMain.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 				DropdownFrameMain.ClipsDescendants = true
@@ -2609,10 +2609,10 @@ function MaouLib:Window(text)
 				DropdownFrameMain.Visible = false
 
 				DropdownFrameMainCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameMainCorner.Name = "DropdownFrameMainCorner"
+				DropdownFrameMainCorner.Name = LibName.."DropdownFrameMainCorner"..LibName
 				DropdownFrameMainCorner.Parent = DropdownFrameMain
 
-				DropItemHolderLabel.Name = "ItemHolderLabel"
+				DropItemHolderLabel.Name = LibName.."ItemHolderLabel"..LibName
 				DropItemHolderLabel.Parent = DropdownFrameMain
 				DropItemHolderLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				DropItemHolderLabel.BackgroundTransparency = 1.000
@@ -2624,7 +2624,7 @@ function MaouLib:Window(text)
 				DropItemHolderLabel.TextSize = 14.000
 				DropItemHolderLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-				DropItemHolder.Name = "ItemHolder"
+				DropItemHolder.Name = LibName.."ItemHolder"..LibName
 				DropItemHolder.Parent = DropItemHolderLabel
 				DropItemHolder.Active = true
 				DropItemHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2636,7 +2636,7 @@ function MaouLib:Window(text)
 				DropItemHolder.BorderSizePixel = 0
 				DropItemHolder.ScrollBarImageColor3 = Color3.fromRGB(28, 29, 32)
 
-				DropItemHolderLayout.Name = "ItemHolderLayout"
+				DropItemHolderLayout.Name = LibName.."ItemHolderLayout"..LibName
 				DropItemHolderLayout.Parent = DropItemHolder
 				DropItemHolderLayout.SortOrder = Enum.SortOrder.LayoutOrder
 				DropItemHolderLayout.Padding = UDim.new(0, 0)
@@ -2673,7 +2673,7 @@ function MaouLib:Window(text)
 					local ItemCorner = Instance.new("UICorner")
 					local ItemText = Instance.new("TextLabel")
 
-					Item.Name = "Item"
+					Item.Name = LibName.."Item"..LibName
 					Item.Parent = DropItemHolder
 					Item.BackgroundColor3 = Color3.fromRGB(42, 44, 48)
 					Item.Size = UDim2.new(0, 379, 0, 29)
@@ -2685,10 +2685,10 @@ function MaouLib:Window(text)
 					Item.BackgroundTransparency = 1
 
 					ItemCorner.CornerRadius = UDim.new(0, 4)
-					ItemCorner.Name = "ItemCorner"
+					ItemCorner.Name = LibName.."ItemCorner"..LibName
 					ItemCorner.Parent = Item
 
-					ItemText.Name = "ItemText"
+					ItemText.Name = LibName.."ItemText"..LibName
 					ItemText.Parent = Item
 					ItemText.BackgroundColor3 = Color3.fromRGB(42, 44, 48)
 					ItemText.BackgroundTransparency = 1.000
@@ -2764,7 +2764,7 @@ function MaouLib:Window(text)
 					local ItemCorner = Instance.new("UICorner")
 					local ItemText = Instance.new("TextLabel")
 
-					Item.Name = "Item"
+					Item.Name = LibName.."Item"..LibName
 					Item.Parent = DropItemHolder
 					Item.BackgroundColor3 = Color3.fromRGB(42, 44, 48)
 					Item.Size = UDim2.new(0, 379, 0, 29)
@@ -2776,10 +2776,10 @@ function MaouLib:Window(text)
 					Item.BackgroundTransparency = 1
 
 					ItemCorner.CornerRadius = UDim.new(0, 4)
-					ItemCorner.Name = "ItemCorner"
+					ItemCorner.Name = LibName.."ItemCorner"..LibName
 					ItemCorner.Parent = Item
 
-					ItemText.Name = "ItemText"
+					ItemText.Name = LibName.."ItemText"..LibName
 					ItemText.Parent = Item
 					ItemText.BackgroundColor3 = Color3.fromRGB(42, 44, 48)
 					ItemText.BackgroundTransparency = 1.000
@@ -2846,14 +2846,14 @@ function MaouLib:Window(text)
 				local PresetClr = Instance.new("Frame")
 				local PresetClrCorner = Instance.new("UICorner")
 
-				Colorpicker.Name = "Colorpicker"
+				Colorpicker.Name = LibName.."Colorpicker"..LibName
 				Colorpicker.Parent = ChannelHolder
 				Colorpicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Colorpicker.BackgroundTransparency = 1.000
 				Colorpicker.Position = UDim2.new(0.0895741582, 0, 0.474232763, 0)
 				Colorpicker.Size = UDim2.new(0, 403, 0, 175)
 
-				ColorpickerTitle.Name = "ColorpickerTitle"
+				ColorpickerTitle.Name = LibName.."ColorpickerTitle"..LibName
 				ColorpickerTitle.Parent = Colorpicker
 				ColorpickerTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ColorpickerTitle.BackgroundTransparency = 1.000
@@ -2865,17 +2865,17 @@ function MaouLib:Window(text)
 				ColorpickerTitle.TextSize = 14.000
 				ColorpickerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				ColorpickerFrameOutline.Name = "ColorpickerFrameOutline"
+				ColorpickerFrameOutline.Name = LibName.."ColorpickerFrameOutline"..LibName
 				ColorpickerFrameOutline.Parent = ColorpickerTitle
 				ColorpickerFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
 				ColorpickerFrameOutline.Position = UDim2.new(-0.00100000005, 0, 0.991999984, 0)
 				ColorpickerFrameOutline.Size = UDim2.new(0, 238, 0, 139)
 
 				ColorpickerFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-				ColorpickerFrameOutlineCorner.Name = "ColorpickerFrameOutlineCorner"
+				ColorpickerFrameOutlineCorner.Name = LibName.."ColorpickerFrameOutlineCorner"..LibName
 				ColorpickerFrameOutlineCorner.Parent = ColorpickerFrameOutline
 
-				ColorpickerFrame.Name = "ColorpickerFrame"
+				ColorpickerFrame.Name = LibName.."ColorpickerFrame"..LibName
 				ColorpickerFrame.Parent = ColorpickerTitle
 				ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				ColorpickerFrame.ClipsDescendants = true
@@ -2884,10 +2884,10 @@ function MaouLib:Window(text)
 				ColorpickerFrame.Size = UDim2.new(0, 234, 0, 135)
 
 				ColorpickerFrameCorner.CornerRadius = UDim.new(0, 3)
-				ColorpickerFrameCorner.Name = "ColorpickerFrameCorner"
+				ColorpickerFrameCorner.Name = LibName.."ColorpickerFrameCorner"..LibName
 				ColorpickerFrameCorner.Parent = ColorpickerFrame
 
-				Color.Name = "Color"
+				Color.Name = LibName.."Color"..LibName
 				Color.Parent = ColorpickerFrame
 				Color.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 				Color.Position = UDim2.new(0, 10, 0, 10)
@@ -2896,10 +2896,10 @@ function MaouLib:Window(text)
 				Color.Image = "rbxassetid://4155801252"
 
 				ColorCorner.CornerRadius = UDim.new(0, 3)
-				ColorCorner.Name = "ColorCorner"
+				ColorCorner.Name = LibName.."ColorCorner"..LibName
 				ColorCorner.Parent = Color
 
-				ColorSelection.Name = "ColorSelection"
+				ColorSelection.Name = LibName.."ColorSelection"..LibName
 				ColorSelection.Parent = Color
 				ColorSelection.AnchorPoint = Vector2.new(0.5, 0.5)
 				ColorSelection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2909,14 +2909,14 @@ function MaouLib:Window(text)
 				ColorSelection.Image = "http://www.roblox.com/asset/?id=4805639000"
 				ColorSelection.ScaleType = Enum.ScaleType.Fit
 
-				Hue.Name = "Hue"
+				Hue.Name = LibName.."Hue"..LibName
 				Hue.Parent = ColorpickerFrame
 				Hue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Hue.Position = UDim2.new(0, 171, 0, 10)
 				Hue.Size = UDim2.new(0, 18, 0, 118)
 
 				HueCorner.CornerRadius = UDim.new(0, 3)
-				HueCorner.Name = "HueCorner"
+				HueCorner.Name = LibName.."HueCorner"..LibName
 				HueCorner.Parent = Hue
 
 				HueGradient.Color = ColorSequence.new {
@@ -2929,10 +2929,10 @@ function MaouLib:Window(text)
 					ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))
 				}				
 				HueGradient.Rotation = 270
-				HueGradient.Name = "HueGradient"
+				HueGradient.Name = LibName.."HueGradient"..LibName
 				HueGradient.Parent = Hue
 
-				HueSelection.Name = "HueSelection"
+				HueSelection.Name = LibName.."HueSelection"..LibName
 				HueSelection.Parent = Hue
 				HueSelection.AnchorPoint = Vector2.new(0.5, 0.5)
 				HueSelection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2941,14 +2941,14 @@ function MaouLib:Window(text)
 				HueSelection.Size = UDim2.new(0, 18, 0, 18)
 				HueSelection.Image = "http://www.roblox.com/asset/?id=4805639000"
 
-				PresetClr.Name = "PresetClr"
+				PresetClr.Name = LibName.."PresetClr"..LibName
 				PresetClr.Parent = ColorpickerFrame
 				PresetClr.BackgroundColor3 = preset
 				PresetClr.Position = UDim2.new(0.846153855, 0, 0.0740740746, 0)
 				PresetClr.Size = UDim2.new(0, 25, 0, 25)
 
 				PresetClrCorner.CornerRadius = UDim.new(0, 3)
-				PresetClrCorner.Name = "PresetClrCorner"
+				PresetClrCorner.Name = LibName.."PresetClrCorner"..LibName
 				PresetClrCorner.Parent = PresetClr
 				
 				local function UpdateColorPicker(nope)
@@ -3061,14 +3061,14 @@ function MaouLib:Window(text)
 				local TextboxFrameCorner = Instance.new("UICorner")
 				local TextBox = Instance.new("TextBox")
 
-				Textbox.Name = "Textbox"
+				Textbox.Name = LibName.."Textbox"..LibName
 				Textbox.Parent = ChannelHolder
 				Textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Textbox.BackgroundTransparency = 1.000
 				Textbox.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Textbox.Size = UDim2.new(0, 403, 0, 73)
 
-				TextboxTitle.Name = "TextboxTitle"
+				TextboxTitle.Name = LibName.."TextboxTitle"..LibName
 				TextboxTitle.Parent = Textbox
 				TextboxTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				TextboxTitle.BackgroundTransparency = 1.000
@@ -3080,7 +3080,7 @@ function MaouLib:Window(text)
 				TextboxTitle.TextSize = 14.000
 				TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				TextboxFrameOutline.Name = "TextboxFrameOutline"
+				TextboxFrameOutline.Name = LibName.."TextboxFrameOutline"..LibName
 				TextboxFrameOutline.Parent = TextboxTitle
 				TextboxFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextboxFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
@@ -3088,10 +3088,10 @@ function MaouLib:Window(text)
 				TextboxFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
 				TextboxFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-				TextboxFrameOutlineCorner.Name = "TextboxFrameOutlineCorner"
+				TextboxFrameOutlineCorner.Name = LibName.."TextboxFrameOutlineCorner"..LibName
 				TextboxFrameOutlineCorner.Parent = TextboxFrameOutline
 
-				TextboxFrame.Name = "TextboxFrame"
+				TextboxFrame.Name = LibName.."TextboxFrame"..LibName
 				TextboxFrame.Parent = TextboxTitle
 				TextboxFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
 				TextboxFrame.ClipsDescendants = true
@@ -3100,7 +3100,7 @@ function MaouLib:Window(text)
 				TextboxFrame.Size = UDim2.new(0, 392, 0, 32)
 
 				TextboxFrameCorner.CornerRadius = UDim.new(0, 3)
-				TextboxFrameCorner.Name = "TextboxFrameCorner"
+				TextboxFrameCorner.Name = LibName.."TextboxFrameCorner"..LibName
 				TextboxFrameCorner.Parent = TextboxFrame
 
 				TextBox.Parent = TextboxFrame
@@ -3147,7 +3147,7 @@ function MaouLib:Window(text)
 				local Label = Instance.new("TextButton")
 				local LabelTitle = Instance.new("TextLabel")
 
-				Label.Name = "Label"
+				Label.Name = LibName.."Label"..LibName
 				Label.Parent = ChannelHolder
 				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Label.BorderSizePixel = 0
@@ -3159,7 +3159,7 @@ function MaouLib:Window(text)
 				Label.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Label.TextSize = 14.000
 
-				LabelTitle.Name = "LabelTitle"
+				LabelTitle.Name = LibName.."LabelTitle"..LibName
 				LabelTitle.Parent = Label
 				LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				LabelTitle.BackgroundTransparency = 1.000
@@ -3180,7 +3180,7 @@ function MaouLib:Window(text)
 				local KeybindTitle = Instance.new("TextLabel")
 				local KeybindText = Instance.new("TextLabel")
 
-				Keybind.Name = "Keybind"
+				Keybind.Name = LibName.."Keybind"..LibName
 				Keybind.Parent = ChannelHolder
 				Keybind.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Keybind.BorderSizePixel = 0
@@ -3192,7 +3192,7 @@ function MaouLib:Window(text)
 				Keybind.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Keybind.TextSize = 14.000
 
-				KeybindTitle.Name = "KeybindTitle"
+				KeybindTitle.Name = LibName.."KeybindTitle"..LibName
 				KeybindTitle.Parent = Keybind
 				KeybindTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				KeybindTitle.BackgroundTransparency = 1.000
@@ -3204,7 +3204,7 @@ function MaouLib:Window(text)
 				KeybindTitle.TextSize = 14.000
 				KeybindTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				KeybindText.Name = "KeybindText"
+				KeybindText.Name = LibName.."KeybindText"..LibName
 				KeybindText.Parent = Keybind
 				KeybindText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				KeybindText.BackgroundTransparency = 1.000
