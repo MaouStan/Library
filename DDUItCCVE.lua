@@ -2131,7 +2131,7 @@ function MaouLib:Window(text)
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(8, 255, 37)
+				Button.BackgroundColor3 = Color3.fromRGB(25, 140, 37)
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
 				Button.Font = Enum.Font.Gotham
