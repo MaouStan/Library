@@ -84,7 +84,7 @@ end
 local maou = Instance.new("ScreenGui")
 maou.Name = LibName
 maou.Parent = game.CoreGui
-maou.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function uiLib:Window(text)
 	local currentservertoggled = ""
