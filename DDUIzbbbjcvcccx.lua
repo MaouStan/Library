@@ -1669,7 +1669,7 @@ function MaouLib:Window(text)
 		local ServerWhiteFrame = Instance.new("Frame")
 		local ServerWhiteFrameCorner = Instance.new("UICorner")
 
-		Server.Name =  LibName.."Server"..LibName
+		Server.Name =  "Server"..text
 		Server.Parent = ServersHold
 		Server.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		Server.Position = UDim2.new(0.125, 0, 0, 0)
@@ -1938,8 +1938,11 @@ function MaouLib:Window(text)
 				currentservertoggled = Server.Name
 				for i, v in next, ServersHolder:GetChildren() do
 					if v.Name == LibName.."ServerFrame"..LibName then
-						spawn(function()
-								if v.Name ~= Server.Name then
+						v.Visible = false
+					end
+					ServerFrame.Visible = true
+				end
+				if currentservertoggled ~= Server.Name then
 					TweenService:Create(
 						Server,
 						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -1957,11 +1960,6 @@ function MaouLib:Window(text)
 						0,
 						true
 					)
-				end
-								end)
-						v.Visible = false
-					end
-					ServerFrame.Visible = true
 				end
 				for i, v in next, ServersHold:GetChildren() do
 					if v.ClassName == "TextButton" then
