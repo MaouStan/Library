@@ -1451,7 +1451,14 @@ end
 							end
 
 						end)
-
+function dropdown_data:Del(n)
+local object_data = {}
+for i,v in pairs(Prefabs:GetChildren()) do
+    if v.Name == "DropdownButton" and v.Text == n then
+v:remove()
+end
+end
+end
 						function dropdown_data:Add(n)
 							local object_data = {}
 							n = tostring(n or "New Object")
