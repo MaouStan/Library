@@ -1890,19 +1890,19 @@ function MaouLib:Window(text)
 				if currentservertoggled ~= Server.Name then
 					TweenService:Create(
 						Server,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{CornerRadius = UDim.new(0, 15)}
 					):Play()
 					ServerWhiteFrame:TweenSize(
 						UDim2.new(0, 11, 0, 27),
 						Enum.EasingDirection.Out,
 						Enum.EasingStyle.Quart,
-						.3,
+						0,
 						true
 					)
 				end
@@ -1914,19 +1914,19 @@ function MaouLib:Window(text)
 				if currentservertoggled ~= Server.Name then
 					TweenService:Create(
 						Server,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{CornerRadius = UDim.new(1, 0)}
 					):Play()
 					ServerWhiteFrame:TweenSize(
 						UDim2.new(0, 11, 0, 10),
 						Enum.EasingDirection.Out,
 						Enum.EasingStyle.Quart,
-						.3,
+						0,
 						true
 					)
 				end
