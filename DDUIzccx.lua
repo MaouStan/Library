@@ -1937,7 +1937,7 @@ function MaouLib:Window(text)
 			function()
 				currentservertoggled = Server.Name
 				for i, v in next, ServersHolder:GetChildren() do
-					if v.Name == "ServerFrame" then
+					if v.Name == LibName.."ServerFrame"..LibName then
 						v.Visible = false
 					end
 					ServerFrame.Visible = true
