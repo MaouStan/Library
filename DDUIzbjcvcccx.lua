@@ -1669,7 +1669,7 @@ function MaouLib:Window(text)
 		local ServerWhiteFrame = Instance.new("Frame")
 		local ServerWhiteFrameCorner = Instance.new("UICorner")
 
-		Server.Name =  "Server"..text
+		Server.Name =  LibName.."Server"..LibName
 		Server.Parent = ServersHold
 		Server.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		Server.Position = UDim2.new(0.125, 0, 0, 0)
