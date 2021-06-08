@@ -1452,6 +1452,11 @@ end
 
 						end)
 						function dropdown_data:Refresh(n)
+							for i,v in pairs(objects:GetChildren()) do
+    if v.Name == "DropdownButton" then
+v:remove()
+end
+end
 							local object_data = {}
 							n = tostring(n or "New Object")
 
@@ -1460,11 +1465,6 @@ end
 							object.Parent = objects
 							object.Text = n
 							object.ZIndex = object.ZIndex + (windows * 10)
-for i,v in pairs(objects:GetChildren()) do
-    if v.Name == "DropdownButton" then
-v:remove()
-end
-end
 							object.MouseEnter:Connect(function()
 								object.BackgroundColor3 = options.main_color
 							end)
