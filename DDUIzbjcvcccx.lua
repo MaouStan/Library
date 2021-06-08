@@ -1939,7 +1939,7 @@ function MaouLib:Window(text)
 				for i, v in next, ServersHolder:GetChildren() do
 					if v.Name == LibName.."ServerFrame"..LibName then
 						spawn(function()
-								if currentservertoggled ~= Server.Name then
+								if v.Name ~= Server.Name then
 					TweenService:Create(
 						Server,
 						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
