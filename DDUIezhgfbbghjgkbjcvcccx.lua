@@ -1908,10 +1908,8 @@ function MaouLib:Window(text)
 				end
 			end
 		)
-
-		Server.MouseLeave:Connect(
-			function()
-				if currentservertoggled ~= Server.Name then
+function leave()
+			if currentservertoggled ~= Server.Name then
 					TweenService:Create(
 						Server,
 						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -1931,16 +1929,15 @@ function MaouLib:Window(text)
 					)
 				end
 			end
-		)
+end
+		Server.MouseLeave:Connect(function()
+				leave()
+			end)
 
 		Server.MouseButton1Click:Connect(
 			function()
+			leave()
 				currentservertoggled = Server.Name
-if currentservertoggled ~= Server.Name then
-					TweenService:Create(Server,TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}):Play()
-TweenService:Create(ServerBtnCorner,TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{CornerRadius = UDim.new(1, 0)}):Play()
-ServerWhiteFrame:TweenSize(UDim2.new(0, 11, 0, 10),Enum.EasingDirection.Out,Enum.EasingStyle.Quart,0,true)
-					end
 				for i, v in next, ServersHolder:GetChildren() do
 					if v.Name == LibName.."ServerFrame"..LibName then
 						v.Visible = false
