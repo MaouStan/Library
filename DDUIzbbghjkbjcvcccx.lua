@@ -1935,14 +1935,8 @@ function MaouLib:Window(text)
 
 		Server.MouseButton1Click:Connect(
 			function()
-				currentservertoggled = Server.Name
-				for i, v in next, ServersHolder:GetChildren() do
-					if v.Name == LibName.."ServerFrame"..LibName then
-						v.Visible = false
-					end
-					ServerFrame.Visible = true
-				end
-				if currentservertoggled ~= Server.Name then
+				
+								if not currentservertoggled == Server.Name then
 					TweenService:Create(
 						Server,
 						TweenInfo.new(0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -1960,6 +1954,13 @@ function MaouLib:Window(text)
 						0,
 						true
 					)
+				end
+				currentservertoggled = Server.Name
+				for i, v in next, ServersHolder:GetChildren() do
+					if v.Name == LibName.."ServerFrame"..LibName then
+						v.Visible = false
+					end
+					ServerFrame.Visible = true
 				end
 				for i, v in next, ServersHold:GetChildren() do
 					if v.ClassName == "TextButton" then
