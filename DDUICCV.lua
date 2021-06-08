@@ -2291,7 +2291,19 @@ function MaouLib:Window(text)
 				
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			
+function MaouLib:ToggleUI()
+	    if game.CoreGui[LibName].Enabled then
+        	game.CoreGui[LibName].Enabled = false
+    	    else
+        	game.CoreGui[LibName].Enabled = true
+    	  end
+end
+function MaouLib:DestroyUI()
+	   if pcall(function() return game.CoreGui[LibName] end) then
+        	game.CoreGui[LibName]:remove()
+    	  end
+end
+	
 			function ChannelContent:Slider(text, min, max, start, callback)
 				local SliderFunc = {}
 				local dragging = false
