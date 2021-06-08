@@ -1458,7 +1458,7 @@ end
 								end
 							end	
 						end
-						function dropdown_data:Refresh(n)
+						function dropdown_data:Add(n)
 							local object_data = {}
 							n = tostring(n or "New Object")
 
