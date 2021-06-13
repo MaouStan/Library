@@ -156,7 +156,7 @@ function VLib:Window(textgame)
 	MainTitle.Position = UDim2.new(0.324129045, 0, 0.0512162149, 0)
 	MainTitle.Size = UDim2.new(0, 71, 0, 20)
 	MainTitle.Font = Enum.Font.Gotham
-	MainTitle.Text = "Ness hub"
+	MainTitle.Text = "MaouStan"
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 14.000
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -333,7 +333,7 @@ function VLib:Window(textgame)
 
 			Button.Name = "Button"
 			Button.Parent = Container
-			Button.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Button.BackgroundColor3 = Color3.fromRGB(25, 140, 37)
 			Button.Size = UDim2.new(0, 403, 0, 28)
 			Button.AutoButtonColor = false
 			Button.Font = Enum.Font.Gotham
@@ -350,7 +350,7 @@ function VLib:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(36,154,69)}
 					):Play()
 				end
 			)
@@ -359,7 +359,7 @@ function VLib:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(25, 140, 37)}
 					):Play()
 				end
 			)
