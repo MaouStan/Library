@@ -258,7 +258,7 @@ function VLib:Window(textgame)
 
 		Title.Name = "Title"
 		Title.Parent = Tab
-		Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Title.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 		Title.BackgroundTransparency = 1.000
 		Title.Position = UDim2.new(0.0566037744, 0, 0, 0)
 		Title.Size = UDim2.new(0, 150, 0, 29)
@@ -274,7 +274,7 @@ function VLib:Window(textgame)
 		Container.Name = "Container"
 		Container.Parent = ContainerHold
 		Container.Active = true
-		Container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Container.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 		Container.BackgroundTransparency = 1.000
 		Container.BorderSizePixel = 0
 		Container.Position = UDim2.new(0.322475582, 0, 0.0506329127, 0)
@@ -333,7 +333,7 @@ function VLib:Window(textgame)
 
 			Button.Name = "Button"
 			Button.Parent = Container
-			Button.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Button.BackgroundColor3 = Color3.fromRGB(25, 140, 37)
 			Button.Size = UDim2.new(0, 403, 0, 28)
 			Button.AutoButtonColor = false
 			Button.Font = Enum.Font.Gotham
@@ -350,7 +350,7 @@ function VLib:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(36,154,69)}
 					):Play()
 				end
 			)
@@ -359,7 +359,7 @@ function VLib:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(25, 140, 37)}
 					):Play()
 				end
 			)
