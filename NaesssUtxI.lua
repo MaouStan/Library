@@ -118,9 +118,6 @@ function VLib:Window(textgame)
 	local LeftFrame = Instance.new("Frame")
 	local LeftFrameCorner = Instance.new("UICorner")
 	local MainTitle = Instance.new("TextLabel")
-	local Circle = Instance.new("Frame")
-	local CircleCorner = Instance.new("UICorner")
-	local CircleName = Instance.new("TextLabel")
 	local GameTitle = Instance.new("TextLabel")
 	local TabHolder = Instance.new("Frame")
 	local TabHoldLayout = Instance.new("UIListLayout")
@@ -160,26 +157,6 @@ function VLib:Window(textgame)
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 14.000
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
-
-	Circle.Name = "Circle"
-	Circle.Parent = LeftFrame
-	Circle.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
-	Circle.Position = UDim2.new(0.0834304541, 0, 0.0474189818, 0)
-	Circle.Size = UDim2.new(0, 38, 0, 38)
-
-	CircleCorner.CornerRadius = UDim.new(2, 0)
-	CircleCorner.Name = "CircleCorner"
-	CircleCorner.Parent = Circle
-
-	CircleName.Name = "CircleName"
-	CircleName.Parent = Circle
-	CircleName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	CircleName.BackgroundTransparency = 1.000
-	CircleName.Size = UDim2.new(0, 38, 0, 37)
-	CircleName.Font = Enum.Font.Gotham
-	CircleName.Text = "V"
-	CircleName.TextColor3 = Color3.fromRGB(255, 255, 255)
-	CircleName.TextSize = 16.000
 
 	GameTitle.Name = "GameTitle"
 	GameTitle.Parent = LeftFrame
@@ -227,14 +204,6 @@ function VLib:Window(textgame)
 	DragFrame.Size = UDim2.new(0, 428, 0, 21)
 	MakeDraggable(DragFrame, MainFrame)
 
-	coroutine.wrap(
-		function()
-			while wait() do
-				RainbowLine.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-				Circle.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-			end
-		end
-	)()
 	local Tabs = {}
 	function Tabs:Tab(text)
 		local Tab = Instance.new("TextButton")
