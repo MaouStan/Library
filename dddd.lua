@@ -156,6 +156,7 @@ function VLib:Window(textgame)
 	MainTitle.Text = "MaouStan"
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 14.000
+	GameTitle.TextTransparency = 0.400
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 	GameTitle.Name = "GameTitle"
@@ -168,7 +169,6 @@ function VLib:Window(textgame)
 	GameTitle.Text = textgame
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.TextSize = 25
-	GameTitle.TextTransparency = 0.400
 	GameTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 	TabHolder.Name = "TabHolder"
