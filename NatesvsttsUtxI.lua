@@ -162,7 +162,7 @@ function VLib:Window(textgame)
 	GameTitle.Parent = LeftFrame
 	GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.BackgroundTransparency = 1.000
-	GameTitle.Position = UDim2.new(0.29 0, 0.0512162149, 0)
+	GameTitle.Position = UDim2.new(0.290, 0.0512162149, 0)
 	GameTitle.Size = UDim2.new(0, 100, 0, 30)
 	GameTitle.Font = Enum.Font.Gotham
 	GameTitle.Text = textgame
