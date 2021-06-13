@@ -113,6 +113,9 @@ UserInputService.InputBegan:Connect(
 
 function VLib:Window(textgame)
 	local FirstTab = false
+	local Circle = Instance.new("Frame")
+	local CircleCorner = Instance.new("UICorner")
+	local CircleName = Instance.new("TextLabel")
 	local MainFrame = Instance.new("Frame")
 	local MainCorner = Instance.new("UICorner")
 	local LeftFrame = Instance.new("Frame")
@@ -159,6 +162,26 @@ function VLib:Window(textgame)
 	MainTitle.TextTransparency = 0.400
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
 
+	Circle.Name = "Circle"
+	Circle.Parent = LeftFrame
+	Circle.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
+	Circle.Position = UDim2.new(0.20, 0, 0.02, 0)
+	Circle.Size = UDim2.new(0, 38, 0, 38)
+
+	CircleCorner.CornerRadius = UDim.new(2, 0)
+	CircleCorner.Name = "CircleCorner"
+	CircleCorner.Parent = Circle
+
+	CircleName.Name = "CircleName"
+	CircleName.Parent = Circle
+	CircleName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	CircleName.BackgroundTransparency = 1.000
+	CircleName.Size = UDim2.new(0, 38, 0, 37)
+	CircleName.Font = Enum.Font.Gotham
+	CircleName.Text = string.gsub(textgame,tostring(string.sub(textgame, -tonumber(#textgame)+1)),"")
+	CircleName.TextColor3 = Color3.fromRGB(255, 255, 255)
+	CircleName.TextSize = 16.000
+	
 	GameTitle.Name = "GameTitle"
 	GameTitle.Parent = LeftFrame
 	GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -166,7 +189,7 @@ function VLib:Window(textgame)
 	GameTitle.Position = UDim2.new(0.15, 0, 0.02, 0)
 	GameTitle.Size = UDim2.new(0, 100, 0, 30)
 	GameTitle.Font = Enum.Font.Gotham
-	GameTitle.Text = textgame
+	GameTitle.Text = tostring(string.sub(textgame, -tonumber(#textgame)+1))
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.TextSize = 25
 	GameTitle.TextXAlignment = Enum.TextXAlignment.Left
