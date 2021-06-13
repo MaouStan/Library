@@ -180,6 +180,7 @@ function VLib:Window(textgame)
 	CircleName.Font = Enum.Font.Gotham
 	CircleName.Text = string.gsub(textgame,tostring(string.sub(textgame, -tonumber(#textgame)+1)),"")
 	CircleName.TextColor3 = Color3.fromRGB(255, 255, 255)
+	CircleName.Position = UDim2.new(0.15, 0, 0.03, 0)
 	CircleName.TextSize = 16.000
 	
 	GameTitle.Name = "GameTitle"
