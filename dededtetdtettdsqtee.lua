@@ -162,37 +162,16 @@ function VLib:Window(textgame)
 	MainTitle.TextTransparency = 0.400
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-	Circle.Name = "Circle"
-	Circle.Parent = LeftFrame
-	Circle.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
-	Circle.Position = UDim2.new(0.15, 0, 0.035, 0)
-	Circle.Size = UDim2.new(0, 20, 0, 20)
-
-	CircleCorner.CornerRadius = UDim.new(2, 0)
-	CircleCorner.Name = "CircleCorner"
-	CircleCorner.Parent = Circle
-
-	CircleName.Name = "CircleName"
-	CircleName.Parent = Circle
-	CircleName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	CircleName.BackgroundTransparency = 1.000
-	CircleName.Size = UDim2.new(0, 38, 0, 37)
-	CircleName.Font = Enum.Font.Gotham
-	CircleName.Text = string.gsub(textgame,tostring(string.sub(textgame, -tonumber(#textgame)+1)),"")
-	CircleName.TextColor3 = Color3.fromRGB(255, 255, 255)
-	CircleName.Position = UDim2.new(0.2, 0, 0.00, 0)
-	CircleName.TextSize = 16.000
-	
 	GameTitle.Name = "GameTitle"
 	GameTitle.Parent = LeftFrame
 	GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.BackgroundTransparency = 1.000
-	GameTitle.Position = UDim2.new(0.3, 0, 0.02, 0)
+	GameTitle.Position = UDim2.new(0.1, 0, 0.02, 0)
 	GameTitle.Size = UDim2.new(0, 38, 0, 38)
 	GameTitle.Font = Enum.Font.Gotham
-	GameTitle.Text = tostring(string.sub(textgame, -tonumber(#textgame)+1))
+	GameTitle.Text = textgame
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-	GameTitle.TextSize = 16
+	GameTitle.TextSize = 20
 	GameTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 	TabHolder.Name = "TabHolder"
