@@ -165,7 +165,7 @@ function VLib:Window(textgame)
 	Circle.Name = "Circle"
 	Circle.Parent = LeftFrame
 	Circle.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
-	Circle.Position = UDim2.new(0.15, 0, 0.04, 0)
+	Circle.Position = UDim2.new(0.15, 0, 0.02, 0)
 	Circle.Size = UDim2.new(0, 20, 0, 20)
 
 	CircleCorner.CornerRadius = UDim.new(2, 0)
