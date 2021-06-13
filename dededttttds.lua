@@ -166,7 +166,7 @@ function VLib:Window(textgame)
 	Circle.Parent = LeftFrame
 	Circle.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
 	Circle.Position = UDim2.new(0.1, 0, 0.02, 0)
-	Circle.Size = UDim2.new(0, 20, 0, 20)
+	Circle.Size = UDim2.new(0, 38, 0, 38)
 
 	CircleCorner.CornerRadius = UDim.new(2, 0)
 	CircleCorner.Name = "CircleCorner"
@@ -186,7 +186,7 @@ function VLib:Window(textgame)
 	GameTitle.Parent = LeftFrame
 	GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.BackgroundTransparency = 1.000
-	GameTitle.Position = UDim2.new(0.3, 0, 0.02, 0)
+	GameTitle.Position = UDim2.new(0.23, 0, 0.02, 0)
 	GameTitle.Size = UDim2.new(0, 38, 0, 38)
 	GameTitle.Font = Enum.Font.Gotham
 	GameTitle.Text = tostring(string.sub(textgame, -tonumber(#textgame)+1))
