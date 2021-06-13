@@ -186,12 +186,12 @@ function VLib:Window(textgame)
 	GameTitle.Parent = LeftFrame
 	GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.BackgroundTransparency = 1.000
-	GameTitle.Position = UDim2.new(0.15, 0, 0.02, 0)
+	GameTitle.Position = UDim2.new(0.3, 0, 0.02, 0)
 	GameTitle.Size = UDim2.new(0, 38, 0, 38)
 	GameTitle.Font = Enum.Font.Gotham
 	GameTitle.Text = tostring(string.sub(textgame, -tonumber(#textgame)+1))
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-	GameTitle.TextSize = 25
+	GameTitle.TextSize = 16
 	GameTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 	TabHolder.Name = "TabHolder"
