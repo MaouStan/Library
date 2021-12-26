@@ -1,3 +1,11 @@
+spawn(function()
+for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+    if v:FindFirstChild("Main") then
+        v.Main.Parent:Destroy()
+    end
+    end
+end)
+
 local Library = {Toggle = true,FirstTab = nil,TabCount = 0,ColorTable = {}}
 
 local RunService = game:GetService("RunService")
