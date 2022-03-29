@@ -561,8 +561,10 @@ do
         end;
 
         function ColorPicker:OnChanged(Func)
+            if Func ~= nil then
             ColorPicker.Changed = Func;
             Func();
+            end
         end;
 
         function ColorPicker:Show()
@@ -1275,8 +1277,10 @@ do
         });
 
         function Textbox:OnChanged(Func)
+            if Func ~= nil then
             Textbox.Changed = Func;
             Func();
+            end
         end;
 
         Groupbox:AddBlank(5);
@@ -1369,8 +1373,10 @@ do
         end;
 
         function Toggle:OnChanged(Func)
+            if Func ~= nil then
             Toggle.Changed = Func;
             Func();
+            end
         end;
 
         function Toggle:SetValue(Bool)
@@ -1524,8 +1530,10 @@ do
         end;
 
         function Slider:OnChanged(Func)
+            if Func ~= nil then
             Slider.Changed = Func;
             Func();
+            end
         end;
 
         local function Round(Value)
@@ -2035,8 +2043,10 @@ function Dropdown:UpdateDropdown(newtable)
         end;
 
         function Dropdown:OnChanged(Func)
+            if Func ~= nil then
             Dropdown.Changed = Func;
             Func();
+            end
         end;
 
         function Dropdown:SetValue(Val)
@@ -2559,8 +2569,10 @@ function Dropdown:UpdateDropdown(newtable)
         end;
 
         function Dropdown:OnChanged(Func)
+            if Func ~= nil then
             Dropdown.Changed = Func;
             Func();
+            end
         end;
 
         function Dropdown:SetValue(Val)
